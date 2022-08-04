@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link rel="stylesheet" href="Navi\NAV.css">
+    <link rel="stylesheet" href="Main\main.css">
+    <link rel="stylesheet" href="Photography/Photography.css">
+    <link rel="stylesheet" href="Photography\PhotographyFlex.css">
+    <link rel="stylesheet" href="Main\main.css">
+    <script src="Main/Main.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="MainNav" style="position: sticky;">
+        <a href="Webdev.html" class="NavLeft">Webdev</a>
+        <a href="Index.html" class="NavCenter">Miłosz Studziżba</a>
+        <a href="AboutMe.html" class="NavRight">About Me</a>
+    </nav>
+    <div class="TitleContainer">
+        <p class="Title">Photography</p>
+    </div>
+    <!--Photos Flex begins here-->
+    <div class="PhotoFlexContainer">
+    <!--Row 1-->
+        <div class="Row">
+            <!--Photo 1-->
+            <div class="PhotoCard" onclick="location.href='PCollectionPets.html';">
+                <img src="Img\Pets\H\_DSC6030.jpg" >
+                <div class="TextContainer">
+                <h2 class="CardTitle" >Pets</h2>
+                <a class="CardDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aliquid.</a>
+                </div>
+            </div>
+            <!--Photo 2-->
+            <div class="PhotoCard PhotoCardVertical" onclick="location.href='PCollectionAmbiguous.html';">
+                <img src="Img\Ambiguous\L\am1.jpg">
+                <div class="TextContainer">
+                <h2 class="CardTitle" >Ambiguous</h2>
+                <a class="CardDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem sunt consequuntur omnis recusandae dignissimos. Id repellendus perferendis blanditiis. Autem, quidem!</a>
+                </div>
+            </div>
+            
+        </div>
+        
+    <!--Row 2-->
+        <div class="Row">
+            <!--Photo 1-->
+            <div class="PhotoCard" onclick="location.href='PCollectionAnimals.html';">
+                <img src="Img/Animals/L/a2.jpg">
+                <div class="TextContainer">
+                <h2 class="CardTitle" >Animals</h2>
+                <a class="CardDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aliquid.</a>
+                </div>
+            </div>
+            <!--Photo 2-->
+            <div class="PhotoCard">
+                <img src="Img\Protest\L\p2.jpg" onclick="location.href='PCollectionProtest.html';">
+                <div class="TextContainer">
+                <h2 class="CardTitle" >Protest</h2>
+                <a class="CardDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aliquid.</a>
+                </div>
+            </div>
+        </div>
+        
+    <!--Row 3-->
+        <div class="Row">
+            <!--Photo 1-->
+            <div class="PhotoCard" onclick="location.href='PCollectionMovement.html';">
+                <img src="Img\Movement\L\m2.jpg">
+                <div class="TextContainer">
+                <h2 class="CardTitle" >Movement</h2>
+                <a class="CardDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem sunt consequuntur omnis recusandae dignissimos. Id repellendus perferendis blanditiis. Autem, quidem!</a>
+                </div>
+            </div>
+            <!--Photo 2-->
+            <div class="PhotoCard" >
+                <img src="Img\Vapour\L\v3.jpg" onclick="location.href='PCollectionVapour.html';">
+                <div class="TextContainer">
+                <h2 class="CardTitle" >Vapour</h2>
+                <a class="CardDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aliquid.</a>
+                </div>
+            </div>
+            <!--Photo 3-->
+            <div class="PhotoCard PhotoCardVertical" onclick="location.href='PCollectionProtestSP.html';">
+                <img src="Img\ProtestSP\L\sp1.jpg">
+                <div class="TextContainer">
+                <h2 class="CardTitle" >Protest Self Portrait</h2>
+                <a class="CardDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aliquid.</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--Footer imports html code from Main/Footer.html using script from Main/Main.js-->
+    <div id="Footer"></div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developement</title>
+    <link rel="stylesheet" href="Navi\NAV.css">
+    <link rel="stylesheet" href="Main\main.css">
+    <link rel="stylesheet" href="Webdev/Webdev.css">
+    <link rel="stylesheet" href="Photography/Photography.css">
+    <link rel="stylesheet" href="Photography/Collection.css">
+    <link rel="stylesheet" href="Lightbox\LightboxCSS.css">
+    <link rel="stylesheet" href="Main\main.css">
+    <script src="Main/Main.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Lightbox\LightboxScript.js" defer></script>
+    
+    
+</head>
+<body>
+    <nav class="MainNav" style="position: sticky;">
+        <a href="Photography.html" class="NavLeft">Photography</a>
+        <a href="Index.html" class="NavCenter">Miłosz Studziżba</a>
+        <a href="AboutMe.html" class="NavRight">About Me</a>
+    </nav>
+    <div class="TitleContainer">
+        <p class="Title">Animals</p>
+    </div>
+    <!--Photos Flex begins here-->
+    <div class="PhotoFlexContainer">
+        <!--Row 1-->
+            <div class="Row">
+                <!--Photo 1-->
+                <div class="PhotoCard" onclick="openModal();currentSlide(1)">
+                    <img src="Img\Animals\L\a1.jpg"  >
+                </div>
+                <!--Photo 4-->
+                <div class="PhotoCard" onclick="openModal();currentSlide(4)">
+                    <img src="Img\Animals\L\a4.jpg" >
+                </div>
+                
+
+            </div>
+            
+        <!--Row 2-->
+            <div class="Row">
+                <!--Photo 2-->
+                <div class="PhotoCard" onclick="openModal();currentSlide(2)">
+                    <img src="Img\Animals\L\a2.jpg" >
+                </div>
+                
+
+            </div>
+            
+        <!--Row 3-->
+            <div class="Row">
+                <!--Photo 3-->
+                <div class="PhotoCard" onclick="openModal();currentSlide(3)">
+                    <img src="Img\Animals\L\a3.jpg" >
+                </div>
+            
+                
+            </div>
+            
+        </div>
+        <!--Photos Flex Ends Here-->
+         <!--Here begins the lightbox-->
+<div class="lightbox1" id="myModal" >
+    <div class="imgbox" id="container">
+    
+        <!--Put images here-->
+        <!--column 1-->
+        <img src="Img\Animals\H\a1.jpg" class="center-fit">      
+        <img src="Img\Animals\H\a2.jpg" class="center-fit">
+        <img src="Img\Animals\H\a3.jpg" class="center-fit">      
+        <img src="Img\Animals\H\a4.jpg" class="center-fit">
+         
+        
+      
+        
+     
+                
+    <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <h class="close">x</h>
+    </div>
+    </div>
+    <!--Footer imports html code from Main/Footer.html using script from Main/Main.js-->
+    <div id="Footer"></div>
+</body>
+</html>

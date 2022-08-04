@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="Navi\NAV.css">
+    
+    <link rel="stylesheet" href="Index\Index.css">
+    <link rel="stylesheet" href="Carousel\CollectionsCarouselV2.css">
+    <script src="Carousel\CarouselScript.js" defer></script>
+    <script src="Index\Index.js" defer></script>
+    <link rel="stylesheet" href="Main\main.css">
+    <script src="Main/Main.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="MainNav" style="position: fixed;">
+        <a href="Photography.html" class="NavLeft">Photography</a>
+        <a href="Webdev.html" class="NavCenter">Webdev</a>
+        <a href="AboutMe.html" class="NavRight">About Me</a>
+    </nav>
+    <!---->
+    <div class="TopImgContainer">
+            
+       <!-- <video autoplay muted loop id="vid1"><source src="index\Resources\1920x1080px_2.mp4" type="video/mp4"> 
+        </video> -->
+        
+        <div class="Name">
+            <a href="AboutMe.html">MIŁOSZ STUDZIŻBA</a>
+            <div class="line-1"></div>
+            <div class="line-0"></div>
+        </div>
+        <div class="Categories">
+            <div class="Category C1" onclick="window.location='Photography.html'">
+              <a>PHOTOGRAPHY</a>
+              
+            </div>
+            <div class="Category C2" onclick="window.location='GraphicDesign.html'"><a>GRAPHIC DESIGN</a></div>
+            <div class="Category C3" onclick="window.location='Webdev.html'"><a>WEB DEVELOPMENT</a></div>
+        </div>
+        
+        <div class="arrow-down" onclick="window.location='#scroll-1'"><a>&#8250;</a></div>
+    </div>
+    <div class="IndexPhotoGrid">
+      <div class="PhotoCard"><img src="Img\Pets\H\_DSC6030.jpg"></div>
+      
+      <div class="PhotoCard"><img src="Img\Animals\L\a2.jpg"></div>
+      <div class="PhotoCard"><img src="Img\Protest\L\p4.jpg"></div>
+      <div class="PhotoCard"><img src="Img\Animals\L\a1.jpg"></div>
+      <div class="PhotoCard"><img src="Img\Movement\L\m2.jpg"></div>
+      <div class="PhotoCard"><img src="Img\Protest\L\p2.jpg"></div>
+      <div class="PhotoCard"><img src="Img\ProtestSP\L\spComb.jpg"></div>
+      <div class="PhotoCard"><img src="Img\Vapour\L\v5.jpg"></div>
+      <div class="PhotoCard"><img src="Img\Vapour\L\v3.jpg"></div>
+      
+    </div>
+    <div class="IndexVideoFlex">
+      <div class="VideoCard">
+        <video muted loop class="Vid1"> <source src="Vid\Web1080p.mp4" type="video/mp4"></video>
+      </div>
+      <div class="VideoCard">
+        <video muted loop class="Vid1"> <source src="Vid\Code1080p.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+    <div class="IndexAboutMeContainer">
+      <p class="AboutMeTitle">
+        About Me
+      </p>
+      <a class="AboutMeDescription">
+        I am a photography student who specialises in still life photography. Due to accelerating development of technology and constant changes within economic landscape I keep my practice flexible, which is why recently I also started scrupulously exploring Graphic design, CGI and Web Development.
+      </a>
+      <div class="Contacts">
+        <a>Telephone:XXX-XXX-XXX</a>
+        <a>E-mail:mstuXXXXXX@gmail.com</a>
+      </div>
+    </div>
+    <!--Collections Carousel-->
+    <div id="scroll-1"></div>     
+    <div class="carousel-title-flex">
+    <a class="carousel-title">Photography</a>
+    <div class="line-carousel-title-1"></div>
+    </div>
+    <div class="row" >
+          <div class="header">
+            <div class="progress-bar"></div>
+          </div>
+          <div class="container">
+            <button class="handle left-handle">
+              <div class="text">&#8249;</div>
+            </button>
+            <div class="slider">
+              <div class="image-card" onclick="location.href='PCollectionPets.html';">
+                <img src="Img\Pets\H\_DSC6030.jpg"  >
+                <a>Pets</a>
+              </div>
+              <div class="image-card" onclick="window.location='PCollectionAnimals.html'">
+                <img src="Img\Animals\H\a2.jpg" >
+                <a>Animals</a>
+              </div>
+              <div class="image-card" onclick="window.location='PCollectionMovement.html'">
+                <img src="Img\Movement\H\m2.jpg" >
+                <a>Movement</a>
+              </div>
+              <div class="image-card" onclick="window.location='PCollectionVapour.html'">
+                <img src="Img\Vapour\L\v5.jpg" >
+                <a>Vapour</a>
+              </div>
+              <div class="image-card" onclick="window.location='PCollectionProtest.html'">
+                <img src="Img\Protest\L\p2.jpg" >
+                <a>Protest</a>
+              </div>
+              <div class="image-card" onclick="window.location='PCollectionProtestSP.html'">
+                <img src="Img\ProtestSP\L\spComb.jpg" >
+                <a>Protest SP</a>
+              </div>
+            </div>
+            <button class="handle right-handle">
+              <div class="text">&#8250;</div>
+            </button>
+          </div>
+        </div>
+        <!--Collections Carousel ends-->
+        <!--Footer imports html code from Main/Footer.html using script from Main/Main.js-->
+        <div id="Footer"></div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.TitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+    
+}
+p {
+    margin-left: 2vw;
+    font-size: 3vw;
+    color: white;
+    border-bottom: 1px solid yellow;
+    
+}

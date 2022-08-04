@@ -1,0 +1,42 @@
+.PhotoFlexContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1%;
+}
+.Row {
+    width: calc(100% / 3);
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.PhotoCard {
+    position: relative;
+    background-size: contain;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2vw;
+    cursor: pointer;
+    transition: 300ms;
+}
+.PhotoCardVertical {
+    width: 80%;
+}
+.PhotoCard img {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.PhotoCard:hover {
+    filter: brightness(1.2);
+    width: 101%;
+}
+.PhotoCard:hover div {
+    opacity: 1;
+    display: block;
+}
+.PhotoCardVertical:hover {
+    width: 81%;
+}
