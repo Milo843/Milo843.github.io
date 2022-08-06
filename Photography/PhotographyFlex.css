@@ -42,12 +42,16 @@
     width: 100%;
     opacity: 0;
     transition: 300ms;
-    
+    line-height: 1.2vw;
 }
 .TextContainer h2 {
-    
+    font-size: 1.5vw;
     color: white;
     margin-bottom: 2%;
+}
+.TextContainer a {
+    font-size: 1vw;
+    
 }
 .PhotoCard:hover {
     filter: brightness(1.2);
@@ -60,3 +64,12 @@
 .PhotoCardVertical:hover {
     width: 81%;
 }
+@media screen and (max-width: 753px) {
+    .TextContainer {
+        line-height: 2.4vw;
+    }
+    .TextContainer a {
+        font-size: 2vw;
+    }
+}
+    
