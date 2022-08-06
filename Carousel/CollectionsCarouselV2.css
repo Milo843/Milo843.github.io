@@ -3,7 +3,7 @@
 }
 
 :root {
-  --handle-size: 3rem;
+  --handle-size: 3vw;
   --img-gap: .25rem;
 }
 
@@ -93,7 +93,7 @@
 
 .handle {
   border: none;
-  border-radius: .5rem;
+  border-radius: .5vw;
   flex-grow: 0;
   flex-shrink: 0;
   background-color: rgba(0, 0, 0, .25);
@@ -101,7 +101,7 @@
   margin: var(--img-gap) 0;
   width: var(--handle-size);
   cursor: pointer;
-  font-size: 5rem;
+  font-size: 5vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,4 +167,12 @@
 }
 
 
-
+@media (max-width: 753px) {
+  :root {
+    --handle-size: 6vw;
+    --img-gap: .25rem;
+  }
+  .handle {
+    font-size: 10vw;
+  }
+}
