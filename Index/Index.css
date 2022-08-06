@@ -158,6 +158,7 @@ background-color: rgba(0, 0, 0, 0.4);
     width: 40%;
     transition: 300ms;
 }
+
 .PhotoCard {
     
     padding-top: 5%;
@@ -307,12 +308,17 @@ background-color: rgba(0, 0, 0, 0.4);
     padding-right: 2%;
     font-family:'Times New Roman', Times, serif;
 }
-/* 3 Qualities of Products Ends*/
+/* JavaScript related Classes*/
 .Hide {
     visibility: hidden; 
     opacity: 0;
 }
-
+.Show {
+    
+    opacity: 1;
+    transition: 300ms;
+    visibility: visible;
+}
 @media screen and (max-width:753px) {
     .TopImgContainer .Name {
         max-width: 65%;
@@ -340,6 +346,10 @@ background-color: rgba(0, 0, 0, 0.4);
         transform: translate(-49%, -25vw);
         align-self: center;
         text-align: center;
+    }
+    .IndexPhotoGridContainer {
+        visibility: hidden !important;
+        opacity: 0 !important;
     }
     
 }
