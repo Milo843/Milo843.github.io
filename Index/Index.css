@@ -149,14 +149,19 @@ background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 14%;
     right: 5%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
     visibility: hidden;
     opacity: 0;
     grid-template-columns: auto auto auto;
     column-gap: 2%;
     width: 40%;
     transition: 300ms;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 1vw;
 }
 
 .PhotoCard {
@@ -175,11 +180,17 @@ background-color: rgba(0, 0, 0, 0.4);
     display: flex;
     top: 12%;
     right: 10%;
-    width: 30%;
+    width: 32%;
+    
+    padding-left: 1%;
+    padding-right: 1%;
     flex-direction: column;
     visibility: hidden;
     opacity: 0;
     transition: 300ms;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 1vw;
 }
 .VideoCard {
     margin-top: 5%;
@@ -201,16 +212,32 @@ background-color: rgba(0, 0, 0, 0.4);
     opacity: 0;
     transition: 300ms;
     margin-top: 3%;
+    ;
 }
 .IndexAboutMeContainer p {
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-self: flex-end;
     text-align: end;
     font-size: 3vw;
     color: white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, .8);
+    width: fit-content;
+    border-radius: 1vw;
+    color: yellow;
 }
 .IndexAboutMeContainer a {
     text-align: justify;
     font-size: 2vw;
     color: white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, .8);
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 1vw;
 }
 .Contacts {
     display: flex;
