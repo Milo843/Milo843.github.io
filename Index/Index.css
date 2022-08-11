@@ -117,7 +117,8 @@ background-color: rgba(0, 0, 0, 0.4);
     transition: 300ms;
 }
 .Category:hover {
-    background-color: rgba(255, 255, 255, .05);
+    background-color: rgba(0, 0, 0, .8);
+    backdrop-filter: blur(10px);
     border-radius: 1vw;
     
 }

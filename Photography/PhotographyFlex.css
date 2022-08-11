@@ -30,6 +30,11 @@
     height: 100%;
     width: 100%;
 }
+video {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
 .TextContainer {
     
     position: absolute;
