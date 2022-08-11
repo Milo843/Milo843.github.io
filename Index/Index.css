@@ -317,7 +317,7 @@ background-color: rgba(0, 0, 0, 0.4);
         transform: translate(-50%,0);
         
     }
-    .TopImgContainer .Name a {
+    .TopImgContainer .Name h1 {
         font-size: 13vw;
     }
     .line-1 {
