@@ -26,29 +26,47 @@ $(document).click(function(e)
 });  
 
 //lightbox script
-
+var slides = document.getElementsByClassName("center-fit")
 var slideIndex = 1;
-showSlides(slideIndex);
 
+showSlides(slideIndex);
+loadSlides(slideIndex)
 function plusSlides(n) {
   showSlides(slideIndex += n);
+  loadSlides(slideIndex += n)
 }
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
+  loadSlides(slideIndex = n)
 }
 
 function showSlides(n) {
   var i;
+  var slideIndexLoad = slideIndex;
   var slides = document.getElementsByClassName("center-fit");
   
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {slideIndex = 1;}
+  if (n < 1) {slideIndex = slides.length; }
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
   slides[slideIndex-1].style.display = "block";
- 
+  
+  
+}
+function loadSlides(n) {
+  var slideIndexLoad = slideIndex;
+  var slides = document.getElementsByClassName("center-fit");
+
+  if (n > slides.length) {slideIndexLoad = 2;}
+  if (n < 1) {slideIndexLoad = slides.length+1;}
+  
+  console.log(slides[slideIndex-1]);
+  console.log(slides[slideIndex]); 
+  
+  console.log(slideIndexLoad);
+  console.log(slideIndex)
 }
 
   //Controll lightbox (switching photos and exiting) by keyboard
@@ -59,3 +77,4 @@ $(document).keydown(function(e){
   if(e.keyCode === 27){ $("#myModal").hide();
   document.querySelector("body").style.overflow = "auto";}  //esc exits lightbox
 }); 
+
