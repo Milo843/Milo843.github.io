@@ -4,18 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphic Design</title>
+    <title>Photography</title>
     <link rel="stylesheet" href="Navi\NAV.css">
+    <link rel="stylesheet" href="Photography/Photography.css">
+    <link rel="stylesheet" href="Photography\PhotographyFlex.css">
     <link rel="stylesheet" href="Main\Main.css">
+    <link rel="stylesheet" href="Lightbox\LightboxCSS.css">
     <script src="Main/Main.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Lightbox\LightboxScript.js" defer></script>
 </head>
 <body>
-    <nav class="MainNav" style="position: fixed;">
-        <a href="Photography.html" class="NavLeft">Photography</a>
+    <nav class="MainNav" style="position: sticky;">
+        <a href="Webdev.html" class="NavLeft">Webdev</a>
         <a href="index.html" class="NavCenter">Miłosz Studziżba</a>
         <a href="AboutMe.html" class="NavRight">About Me</a>
     </nav>
+    <div class="TitleContainer">
+        <h1 class="Title">Computer Generated Imagery</h1>
+    </div>
+    <!--Photos Flex begins here-->
+    <div class="PhotoFlexContainer">
+    <!--Row 1-->
+        <div class="Row">
+            <!--Photo 1-->
+            <div class="PhotoCard" onclick="openModal();currentSlide(1)">
+                <img src="CGI\Alive\AliveIco.jpg" >
+                <div class="TextContainer">
+                <h2 class="CardTitle" >Alive</h2>
+                <a class="CardDescription">Outcomes generated during that project fature exploring geometry nodes and mathematical principles of art.</a>
+                </div>
+            </div>
+            <!--Photo 2-->
+            
+            
+        </div>
+        
+    <!--Row 2-->
+        <div class="Row">
+            <!--Photo 1-->
+            <div class="PhotoCard" onclick="openModal();currentSlide(1)">
+                <video src="CGI\Alive\Alive360p.mp4" autoplay loop disablePictureInPicture></video>
+                <div class="TextContainer">
+                <h2 class="CardTitle" >Alive</h2>
+                <a class="CardDescription">Outcomes generated during that project fature exploring geometry nodes and mathematical principles of art.</a>
+                </div>
+            </div>
+        </div>
+            <!--Photo 2-->
+            
+    <!--Row 3-->
+        <div class="Row">
+            <!--Photo 1-->
+            <div class="PhotoCard" onclick="openModal();currentSlide(2)">
+                <video src="CGI\NMixed\NMixed360p.mp4" autoplay loop disablePictureInPicture></video>
+                <div class="TextContainer">
+                <h2 class="CardTitle" >N</h2>
+                <a class="CardDescription">Outcomes generated during that project explore philosophical idea behnid the meaning of life.</a>
+                </div>
+            </div>
+        </div>
+            <!--Photo 2-->
+
+            <!--Photo 3-->
+    </div>
+    <!--Photos Flex Ends Here-->
+         <!--Here begins the lightbox-->
+<div class="lightbox1" id="myModal" >
+    <div class="imgbox" id="container">
+    
+    <video src="CGI\Alive\AliveWeb.mp4" class="center-fit" controls disablePictureInPicture controlsList="nodownload" muted autoplay loop></video>  
+    <video src="CGI\NMixed\NMixedWeb.mp4" class="center-fit" controls disablePictureInPicture controlsList="nodownload" muted autoplay loop></video>
+
+                
+    <!--<a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+    <h class="close">x</h>
+    </div>
+    </div>
     <!--Footer imports html code from Main/Footer.html using script from Main/Main.js-->
     <footer id="Footer"></footer>
 </body>
