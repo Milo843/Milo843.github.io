@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400&display=swap');
+:root {
+    --padding-horizontal-nav-elements:1rem;
+    --margin-horizontal-nav-elements:1rem;
+    --button-border-radius:.5rem;
+    --nav-bar-font-family:'Figtree', sans-serif;
+    --nav-bar-height:3.5rem;
+}
+.main-nav {
+    z-index: 999;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    height: var(--nav-bar-height);
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(5px);
+}
+.nav-dummy {
+    height: var(--nav-bar-height);
+}
+.nav-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 84%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    
+    padding-left: var(--padding-horizontal-nav-container);
+    padding-right: var(--padding-horizontal-nav-container);
+    
+}
+.nav-container > * {
+    height: 100%;
+    z-index: 9999;
+}
+
+.nav-left {
+    display: flex;
+    height: 100%;
+    
+}
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.nav-left button {
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.nav-left button:hover {
+    margin-left: calc(0rem - var(--padding-horizontal-nav-elements));
+    margin-right: calc(0rem - var(--padding-horizontal-nav-elements)) ;
+    padding-left: var(--padding-horizontal-nav-elements);
+    padding-right: var(--padding-horizontal-nav-elements);
+}
+.nav-center button {
+    
+    margin-left: var(--margin-horizontal-nav-elements);
+    margin-right: var(--margin-horizontal-nav-elements);
+    padding-left: var(--padding-horizontal-nav-elements);
+    padding-right: var(--padding-horizontal-nav-elements);
+}
+.nav-right button{
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.nav-right button:hover {
+    margin-left: calc(0rem - var(--padding-horizontal-nav-elements));
+    margin-right: calc(0rem - var(--padding-horizontal-nav-elements)) ;
+    padding-left: var(--padding-horizontal-nav-elements);
+    padding-right: var(--padding-horizontal-nav-elements);
+}
+.nav-container button {
+    font-family: var(--nav-bar-font-family);
+    background-color: transparent;
+    border: none;
+    color: var(--font-color-bright-secondary);
+    height: 80%;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    display: inline-block;
+    border-radius: var(--border-radius-button)
+}
+.nav-container button:hover {
+    
+    transition: 20ms;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+}
