@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="Navi\NAV.css">
     <link rel="stylesheet" href="Webdev/Webdev.css">
     <link rel="stylesheet" href="Main\Main.css">
+    <link rel="stylesheet" href="Photography/Photography.css">
+    <link rel="stylesheet" href="Photography\PhotographyFlex.css">
     <script src="Main/Main.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -19,9 +21,50 @@
     </nav>
     <div class="TitleContainer">
         <h1 class="Title">Webdev</h1>
-        
-        
     </div>
+
+    <!--Photos Flex begins here-->
+    <div class="PhotoFlexContainer">
+        <!--Row 1-->
+            <div class="Row">
+                <!--Photo 1-->
+                <div class="PhotoCard" onclick="location.href='Webdev/Webdev-Website/index.html';'_blank'">
+                    <img src="Img\Webdev\webdev-icon-v2.PNG" >
+                    <div class="TextContainer">
+                    <h2 class="CardTitle" >AMJ</h2>
+                    <a class="CardDescription">While creating that website I focused on creating a simple and proffesional looking design that also reflects skills in website developement </br>/Work in progress/</a>
+                    </div>
+                </div>
+                <!--Photo 2-->
+                
+                
+            </div>
+            
+        <!--Row 2-->
+            <div class="Row">
+                <!--Photo 1-->
+                <div class="PhotoCard" onclick="location.href='./Webdev/Webdev-Website/index.html';">
+                    
+                    </div>
+                </div>
+            </div>
+                <!--Photo 2-->
+                
+        <!--Row 3-->
+            <div class="Row">
+                <!--Photo 1-->
+                <div class="PhotoCard" onclick="openModal();currentSlide(2)">
+                    
+                    </div>
+                </div>
+            </div>
+                <!--Photo 2-->
+    
+                <!--Photo 3-->
+        </div>
+
+
+
     <!--Footer imports html code from Main/Footer.html using script from Main/Main.js-->
     <footer id="Footer"></footer>
 </body>
