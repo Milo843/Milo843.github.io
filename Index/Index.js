@@ -18,6 +18,7 @@
         $('.IndexVideoFlex').addClass("Show");
         $('.Vid1').get(0).play();
         $('.Vid1').get(1).play();
+        
       },
       function () {
         $('.IndexVideoFlex').removeClass("Show");
