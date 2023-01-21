@@ -82,12 +82,12 @@
 }
 .nav-container button {
     font-family: var(--nav-bar-font-family);
-    background-color: transparent;
-    border: none;
     color: var(--font-color-bright-secondary);
     height: 80%;
-    text-align: center;
+    background-color: transparent;
+    border: none;
     text-decoration: none;
+    text-align: center;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
