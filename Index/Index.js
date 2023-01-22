@@ -1,43 +1,53 @@
 
+var test1 = document.getElementsByClassName("test1");
+var indexLength = document.getElementsByClassName("test").length
+var noni = Array.from(Array(indexLength).keys())
+var classVisible = document.getElementsByClassName("index-visible")
+var test = document.getElementsByClassName("test");
+var pageDivs = document.getElementsByClassName("test1");
+for(i = 0; i < pageDivs.length;i++)
+{
+    //apply your effects using pageDivs[i]
+}
 
 
-  if (window.matchMedia( "(max-width: 753px)" ).matches) {
-    ;
+
+
+$('#E1').mouseenter(
+  function() {
+    $('.test').removeClass("index-visible");
+    $('.test').addClass("index-hidden");
+    $('#C1').removeClass('index-hidden');
+    $('#C1').addClass('index-visible');
+    console.log('dupa')
   }
-  else {
-    $('.C1').hover(
-      function() {
-        $('.IndexPhotoGrid').addClass("Show");
-      },
-      function() {
-        $('.IndexPhotoGrid').removeClass("Show");
-      }
-    )
-    $('.C3').hover(
-      function() {
-        $('.IndexVideoFlex').addClass("Show");
-        $('.Vid1').get(0).play();
-        $('.Vid1').get(1).play();
-        
-      },
-      function () {
-        $('.IndexVideoFlex').removeClass("Show");
-        $('.Vid1').get(0).pause();
-        $('.Vid1').get(1).pause();
-      }
-    )
-    $('.Name').hover(
-      function() {
-        $('.IndexAboutMeContainer').addClass("Show");
-      },
-      function() {
-        $('.IndexAboutMeContainer').removeClass("Show")
-      }
-    )
+)
+
+$('#E2').mouseenter(
+  function() {
+    $('.test').removeClass("index-visible");
+    $('.test').addClass("index-hidden");
+    $('#C2').removeClass('index-hidden');
+    $('#C2').addClass('index-visible');
+    console.log('dupa')
   }
- 
+)
 
-  
-
-
-  
+$('#E3').mouseenter(
+  function() {
+    $('.test').removeClass("index-visible");
+    $('.test').addClass("index-hidden");
+    $('#C3').removeClass('index-hidden');
+    $('#C3').addClass('index-visible');
+    console.log('dupa')
+  }
+)
+$('#E4').mouseenter(
+  function() {
+    $('.test').removeClass("index-visible");
+    $('.test').addClass("index-hidden");
+    $('#C4').removeClass('index-hidden');
+    $('#C4').addClass('index-visible');
+    console.log('dupa')
+  }
+)

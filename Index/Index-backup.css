@@ -1,7 +1,4 @@
-:root {
-    --index-horizontal-padding:1.8rem;
-    --index-a-margin:.8rem
-}
+
 html {
     scroll-behavior: smooth;
   }
@@ -29,62 +26,34 @@ background-color: rgba(0, 0, 0, 0.4);
 .Vid1 {
     pointer-events: none;
 }
-.left-index-text {
-    width: 42%;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
+.TopImgContainer .Name {
+    max-width: 45vw;
+    border-radius: 1rem;
+    z-index: 0;
     position: relative;
-    left: 8%;
-}
-.title {
-    margin-top: 14vh;
-    position: absolute;
+    top: 11%;
+    padding-left: 2%;
     text-align: center;
+    color: white;
     cursor: pointer;
-    margin-left: -25%;
-
-
+     /* Makes text unselectable */
+     -webkit-user-select: none; /* Safari */        
+     -moz-user-select: none; /* Firefox */
+     -ms-user-select: none; /* IE10+/Edge */
+     user-select: none; /* Standard */
 }
-.left-index-text h1 {
-    line-height: 150%;
-    color: var(--font-color-bright-primary);
+.TopImgContainer .Name h1 {
+    
+    text-transform: uppercase;
+    padding: 1%;
+    text-align: center;
     font-size: 7vw;
-}
-.left-index-text a {
-    align-self:stretch;
-    position: relative;
-    top:calc(100% - 3 * var(--font-size-secondary-elements) - 18%);
+    color: var(--font-color-bright-primary);
+    font-family: 'inter', sans-serif;
     text-decoration: none;
     font-weight: bold;
-    font-size: var(--font-size-secondary-elements);
-    padding-left: var(--index-horizontal-padding);
-    padding-right: var(--index-horizontal-padding);
-    margin-bottom: var(--index-a-margin);
-    width: fit-content;
-}
-.left-index-text :nth-child(2) {
-    margin-left: calc(0rem - var(--index-horizontal-padding));
-
-}
-.left-index-text :nth-child(4) {
-    margin-left:var(--index-horizontal-padding);
-
-}
-.title:hover > .line-0 {
-    visibility: visible;
-    opacity: 1;
-}
-.title:hover > .line-1 {
-    visibility: visible;
-    opacity: 1;
-}
-.left-index-text a:hover {
-    background-color: rgba(0, 0, 0, .8);
-    backdrop-filter: blur(10px);
-    border-radius: 1vw;  
-    color: var(--primary-color);  
+    line-height: 150%;
+    
 }
 .line-0 {
     visibility: hidden;
@@ -109,20 +78,62 @@ background-color: rgba(0, 0, 0, 0.4);
     height: 0px;
     margin-bottom: 1rem;
     left:50%;
-    transform: translate(-45%, -2vw);
+    transform: translate(-50%, -2vw);
     align-self: center;
     text-align: center;
     transition: 300ms;
 
 }
+.Name:hover > .line-0 {
+    visibility: visible;
+    opacity: 1;
+}
+.Name:hover > .line-1 {
+    visibility: visible;
+    opacity: 1;
+}
 
 
-
-
-
-
-
-
+.TopImgContainer .Categories {
+    position: absolute;
+    bottom:10%;
+    display: flex;
+    flex-direction: column;
+    left: 0%;
+    
+}
+.TopImgContainer .Categories a {
+    font-size: 3vw;
+    font-weight: bold;
+    
+}
+.Category {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1vw;
+    transition: 300ms;
+}
+.Category:hover {
+    background-color: rgba(0, 0, 0, .8);
+    backdrop-filter: blur(10px);
+    border-radius: 1vw;
+    
+}
+.Category:hover a {
+    color: var(--primary-color);
+}
+.C1 {
+    width: 82%;
+}
+.C2 {
+    width: 106%;
+}
+.C3 {
+    width: 120%;
+}
 
 .IndexPhotoGridContainer {
     position: absolute;
@@ -138,7 +149,10 @@ background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 14%;
     right: 5%;
-    padding: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
     grid-template-columns: auto auto auto;
     column-gap: 2%;
     width: 40%;
@@ -149,50 +163,15 @@ background-color: rgba(0, 0, 0, 0.4);
 }
 
 .PhotoCard {
-    display: flex;
-    position: relative;
-    align-items: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    overflow: hidden;
-
+    
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .PhotoCard img {
     width: 100%;
     vertical-align: middle;
-    margin: 2%;
+    padding: 2%;
     aspect-ratio: 3 / 2;
-    cursor: pointer;
-}
-.PhotoCard p {
-    visibility: hidden;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, .8);
-    backdrop-filter: blur(5px);
-    color: var(--font-color-bright-primary);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: fit-content;
-    max-width: 100%;
-    text-align: center;
-    font-size: 1.5vw;
-    padding-left: var(--horizontal-padding-photocard);
-    padding-right: var(--horizontal-padding-photocard);
-    padding-bottom: var(--vertical-padding-photocard);
-    padding-top: var(--vertical-padding-photocard);
-    border-radius: 1rem;
-    transition: 300ms;
-    cursor: pointer;
-}
-.PhotoCard:hover p {
-    visibility: visible;
-    opacity: 1;
-
-}
-:root {
-    --horizontal-padding-photocard:10%;
-    --vertical-padding-photocard:2.5%;
 }
 .IndexVideoFlex {
     position: absolute;
@@ -200,6 +179,7 @@ background-color: rgba(0, 0, 0, 0.4);
     top: 12%;
     right: 10%;
     width: 32%;
+    
     padding-left: 1%;
     padding-right: 1%;
     flex-direction: column;
@@ -217,36 +197,6 @@ background-color: rgba(0, 0, 0, 0.4);
 .VideoCard video {
     width: 100%;
 }
-.Index-CGI-Grid {
-    display: grid;
-    position: absolute;
-    top: 14%;
-    right: 5%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    grid-template-columns: auto auto ;
-    column-gap: 2%;
-    width: 40%;
-    transition: 300ms;
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, .8);
-    border-radius: 1vw;
-}
-.CGI-Card {
-    
-   margin: 5%;
-}
-.CGI-Card video {
-    width: 100%;
-    vertical-align: middle;
-    margin: 2%;
-    aspect-ratio: 16 / 9;
-    cursor: pointer;
-}
-
-
 .IndexAboutMeContainer {
     position: absolute;
     display: flex;
@@ -273,7 +223,6 @@ background-color: rgba(0, 0, 0, 0.4);
     width: fit-content;
     border-radius: 1vw;
     color: var(--primary-color);
-    cursor: pointer;
 }
 .IndexAboutMeContainer a {
     text-align: justify;
@@ -283,7 +232,6 @@ background-color: rgba(0, 0, 0, 0.4);
     padding-left: 3%;
     padding-right: 3%;
     border-radius: 1vw;
-    cursor: pointer;
 }
 .AboutMeDescription {
     backdrop-filter: blur(10px);
@@ -348,7 +296,7 @@ background-color: rgba(0, 0, 0, 0.4);
 .index-hidden {
     visibility: hidden; 
     opacity: 0;
-
+    display: none;
 }
 
 .index-visible {
