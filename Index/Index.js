@@ -19,10 +19,18 @@ $('#E1').mouseenter(
     $('.test').addClass("index-hidden");
     $('#C1').removeClass('index-hidden');
     $('#C1').addClass('index-visible');
+    $('.line-0').addClass('index-visible');
+    $('.line-1').addClass('index-visible');
     console.log('dupa')
   }
 )
-
+$('#E1').mouseleave(
+  function() {
+    $('.line-0').removeClass('index-visible');
+    $('.line-1').removeClass('index-visible');
+    console.log('dupa')
+  }
+)
 $('#E2').mouseenter(
   function() {
     $('.test').removeClass("index-visible");
@@ -49,5 +57,12 @@ $('#E4').mouseenter(
     $('#C4').removeClass('index-hidden');
     $('#C4').addClass('index-visible');
     console.log('dupa')
+  }
+)
+
+$('.test').mouseleave(
+  function() {
+    $('.test').removeClass("index-visible");
+    $('.test').addClass("index-hidden");
   }
 )
