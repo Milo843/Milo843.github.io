@@ -1,7 +1,10 @@
 :root {
     --index-horizontal-padding:1.8rem;
-    --index-a-margin:.8rem
+    --index-a-margin:.8rem;
+    --horizontal-padding-photocard:10%;
+    --vertical-padding-photocard:2.5%;
 }
+
 html {
     scroll-behavior: smooth;
   }
@@ -125,13 +128,6 @@ background-color: rgba(0, 0, 0, 0.4);
 }
 
 
-
-
-
-
-
-
-
 .IndexPhotoGridContainer {
     position: absolute;
     top:10%;
@@ -163,7 +159,6 @@ background-color: rgba(0, 0, 0, 0.4);
     margin-top: 5%;
     margin-bottom: 5%;
     overflow: hidden;
-
 }
 .PhotoCard img {
     width: 100%;
@@ -196,12 +191,8 @@ background-color: rgba(0, 0, 0, 0.4);
 .PhotoCard:hover p {
     visibility: visible;
     opacity: 1;
+}
 
-}
-:root {
-    --horizontal-padding-photocard:10%;
-    --vertical-padding-photocard:2.5%;
-}
 .IndexVideoFlex {
     position: absolute;
     display: flex;
@@ -224,7 +215,6 @@ background-color: rgba(0, 0, 0, 0.4);
 }
 .VideoCard video {
     width: 100%;
-    
 }
 .Index-CGI-Grid {
     display: grid;
@@ -244,7 +234,6 @@ background-color: rgba(0, 0, 0, 0.4);
     border-radius: 1vw;
 }
 .CGI-Card {
-    
    margin: 5%;
 }
 .CGI-Card video {
@@ -268,7 +257,6 @@ background-color: rgba(0, 0, 0, 0.4);
     justify-content: space-between;
     transition: 300ms;
     margin-top: 3%;
-    
 }
 .IndexAboutMeContainer p {
     padding: 2%;

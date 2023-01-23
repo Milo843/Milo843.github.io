@@ -1,0 +1,106 @@
+:root {
+    --photo-height:45vw;
+}
+/* Top Image with Name */
+.top-about-me-container {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.top-about-me-container img {
+    object-fit: cover;
+    z-index: -2;
+}
+.top-about-me-container video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -2;
+    pointer-events: none;
+}
+.photo-text-grid {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 35% 65%;
+}
+.about-me-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.photo-container {
+    width: fit-content;
+    position: relative;
+    height: var(--photo-height);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about-me-photo img {
+    height: var(--photo-height);
+}
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, .8);
+    height: 80%;
+    border-radius: 1vw;
+    color: var(--font-color-bright-secondary);
+}
+.about-me-text p {
+    font-size: 2vw;
+}
+.about-me-text h1 {
+    font-size: 3vw;
+}
+.Contacts {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.Contacts a {
+    font-size: 1.5vw;
+    padding-bottom: 1%;
+}
+
+.arrow-down {
+    z-index: 0;
+    position: absolute;
+    bottom: calc(0% - 2rem);
+    left: calc(50% - 1.5rem);
+    transform: rotate(90deg);
+    color: white;
+    font-size: 6rem;
+    line-height: 0%;
+    background-color: rgba(255, 255, 255, .05);
+    padding-left: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    /* Makes text unselectable */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    transition: 300ms;
+}
+.arrow-down:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+.arrow-down:hover a{
+    color: var(--primary-color);
+}
