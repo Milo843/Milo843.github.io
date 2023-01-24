@@ -61,8 +61,6 @@ body {
 }
 .about-us-description-container {
     height: 100vh;
-    
-    background-color: aqua;
     display: flex;
     position: relative;
     flex-direction: column;
