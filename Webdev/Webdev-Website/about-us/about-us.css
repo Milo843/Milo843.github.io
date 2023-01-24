@@ -8,12 +8,10 @@ body {
 }
 .about-us-container {
     height: 100vh;
-    
     display: flex;
     object-position: center;
     justify-content: center;
     overflow: hidden;
-    
 }
 .about-us-container video {
     width: 100%;
@@ -21,12 +19,12 @@ body {
     position: absolute;
     object-fit: cover;
     z-index: -1;
+    pointer-events: none;
 }
 .about-us-container img {
     height: 80%;
     position: relative;
     top: 20%;  
-    
 }
 .about-us-background-filter {
     position: absolute;
@@ -74,6 +72,7 @@ body {
     height: 100%;
     object-fit: cover;
     width: 100%;
+    pointer-events: none;
 }
 .about-us-description-container p {
     font-size: var(--font-size-secondary-elements);
@@ -87,5 +86,4 @@ body {
     width: 40%;
     top: 50%;
     transform: translateY(-50%);
-
 }
