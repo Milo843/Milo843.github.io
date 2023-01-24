@@ -78,12 +78,16 @@ body {
     font-size: var(--font-size-secondary-elements);
     font-family: var(--main-font-family);
     color: var(--font-color-dark-secondary);
-    margin-bottom: 5%;
+
 }
 .description-text-container {
     position: relative;
+    display: grid;
     margin-left: 8%;
     width: 40%;
     top: 50%;
+    height: fit-content;
+    gap: 2rem;
     transform: translateY(-50%);
+
 }
