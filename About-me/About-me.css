@@ -19,6 +19,7 @@
     object-fit: cover;
     z-index: -2;
     pointer-events: none;
+    filter: blur(3px);
 }
 .photo-text-grid {
     display: grid;
