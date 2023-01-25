@@ -5,6 +5,11 @@
     --button-border-radius:.5rem;
     --nav-bar-font-family:'Figtree', sans-serif;
     --nav-bar-height:3.5rem;
+    --nav-font-size:1.2rem;
+    --nav-grid-gap:2.25rem
+}
+a {
+    text-decoration: none;
 }
 .main-nav {
     z-index: 111;
@@ -15,6 +20,7 @@
     width: 100%;
     background-color: rgba(0, 0, 0, .5);
     backdrop-filter: blur(5px);
+    font-size: var(--nav-font-size);
 }
 .nav-dummy {
     height: var(--nav-bar-height);
@@ -27,75 +33,53 @@
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    justify-items: center;
-    
     padding-left: var(--padding-horizontal-nav-container);
     padding-right: var(--padding-horizontal-nav-container);
-    
-}
-.nav-container > * {
-    height: 100%;
-    z-index: 9999;
 }
 
-.nav-left {
+.nav-container div {
     display: flex;
-    height: 100%;
-    
-}
-.nav-center {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-}
-.nav-left button {
-    margin-left: 0%;
-    margin-right: 0%;
-    padding-left: 0%;
-    padding-right: 0%;
-}
-.nav-left button:hover {
-    margin-left: calc(0rem - var(--padding-horizontal-nav-elements));
-    margin-right: calc(0rem - var(--padding-horizontal-nav-elements)) ;
-    padding-left: var(--padding-horizontal-nav-elements);
-    padding-right: var(--padding-horizontal-nav-elements);
-}
-.nav-center button {
-    
-    margin-left: var(--margin-horizontal-nav-elements);
-    margin-right: var(--margin-horizontal-nav-elements);
-    padding-left: var(--padding-horizontal-nav-elements);
-    padding-right: var(--padding-horizontal-nav-elements);
-}
-.nav-right button{
-    margin-left: 0%;
-    margin-right: 0%;
-    padding-left: 0%;
-    padding-right: 0%;
-}
-.nav-right button:hover {
-    margin-left: calc(0rem - var(--padding-horizontal-nav-elements));
-    margin-right: calc(0rem - var(--padding-horizontal-nav-elements)) ;
-    padding-left: var(--padding-horizontal-nav-elements);
-    padding-right: var(--padding-horizontal-nav-elements);
-}
-.nav-container button {
-    font-family: var(--nav-bar-font-family);
-    color: var(--font-color-bright-secondary);
     height: 80%;
-    background-color: transparent;
-    border: none;
-    text-decoration: none;
-    text-align: center;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 1.2rem;
-    display: inline-block;
-    border-radius: var(--border-radius-button)
+    border-radius: var(--button-border-radius);
 }
-.nav-container button:hover {
+
+.nav-container .nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--nav-grid-gap);
+}
+
+.nav-left a:hover {
+    margin-left: calc(0rem - var(--padding-horizontal-nav-elements));
+    margin-right: calc(0rem - var(--padding-horizontal-nav-elements)) ;
+    padding-left: var(--padding-horizontal-nav-elements);
+    padding-right: var(--padding-horizontal-nav-elements);
+}
+.nav-center a {
+    padding-left: var(--padding-horizontal-nav-elements);
+    padding-right: var(--padding-horizontal-nav-elements);
+}
+
+.nav-right a:hover {
+    margin-left: calc(0rem - var(--padding-horizontal-nav-elements));
+    margin-right: calc(0rem - var(--padding-horizontal-nav-elements)) ;
+    padding-left: var(--padding-horizontal-nav-elements);
+    padding-right: var(--padding-horizontal-nav-elements);
+}
+.nav-container a {
+    color: var(--font-color-bright-secondary);
+    font-family: var(--nav-bar-font-family);
+    border-radius: var(--border-radius-button);
+    display: flex;
+    align-items: center;
+}
+.nav-container a:hover {
     
     transition: 20ms;
     background-color: rgba(255, 255, 255, 0.1);

@@ -4,6 +4,10 @@
     --margin-horizontal-nav-elements:1rem;
     --button-border-radius:.5rem;
     --nav-bar-font-family:'Figtree', sans-serif;
+    --nav-grid-gap:2.25rem
+}
+a {
+    text-decoration: none;
 }
 .main-nav {
     z-index: 3;
@@ -23,74 +27,59 @@
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    justify-items: center;
-    
     padding-left: var(--padding-horizontal-nav-container);
     padding-right: var(--padding-horizontal-nav-container);
-    
 }
-.nav-container > * {
-    height: 100%;
+.nav-container div {
+    display: flex;
+    height: 80%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: var(--button-border-radius);
 }
 
-.nav-left {
-    display: flex;
-    height: 100%;
-    
-}
-.nav-center {
+.nav-container .nav-center {
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--nav-grid-gap);
 }
+
 .nav-left button {
     margin-left: 0%;
     margin-right: 0%;
     padding-left: 0%;
     padding-right: 0%;
 }
-.nav-left button:hover {
+.nav-left a:hover {
     margin-left: calc(0rem - var(--padding-horizontal-nav-elements));
     margin-right: calc(0rem - var(--padding-horizontal-nav-elements)) ;
     padding-left: var(--padding-horizontal-nav-elements);
     padding-right: var(--padding-horizontal-nav-elements);
 }
-.nav-center button {
-    
-    margin-left: var(--margin-horizontal-nav-elements);
-    margin-right: var(--margin-horizontal-nav-elements);
+.nav-center a {
     padding-left: var(--padding-horizontal-nav-elements);
     padding-right: var(--padding-horizontal-nav-elements);
 }
-.nav-right button{
-    margin-left: 0%;
-    margin-right: 0%;
-    padding-left: 0%;
-    padding-right: 0%;
-}
-.nav-right button:hover {
+
+.nav-right a:hover {
     margin-left: calc(0rem - var(--padding-horizontal-nav-elements));
     margin-right: calc(0rem - var(--padding-horizontal-nav-elements)) ;
     padding-left: var(--padding-horizontal-nav-elements);
     padding-right: var(--padding-horizontal-nav-elements);
 }
-.nav-container button {
+.nav-container a {
     font-family: var(--nav-bar-font-family);
-    background-color: transparent;
-    border: none;
     color: var(--font-color-dark-secondary);
-    height: 80%;
-    text-align: center;
-    text-decoration: none;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     font-size: 1.1rem;
-    display: inline-block;
-    border-radius: var(--border-radius-button)
+    border-radius: var(--border-radius-button);
+    display: flex;
+    align-items: center;
 }
-.nav-container button:hover {
+.nav-container a:hover {
     
     transition: 20ms;
     background-color: rgba(0, 0, 0, 0.1);
