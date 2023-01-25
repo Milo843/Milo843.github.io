@@ -8,6 +8,10 @@
 html {
     scroll-behavior: smooth;
   }
+
+img {
+    pointer-events: none;
+  } 
 /* Top Image with Name */
 .TopImgContainer {
 width: 100%;
