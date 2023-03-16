@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index\index.css">
+    <link rel="stylesheet" href="main\main.css">
+    <link rel="stylesheet" href="nav/nav.css">
+    <link rel="stylesheet" href="Lightbox\lightbox.css">
+
+    <script src="index\jquery.js"></script>
+    <!-- <script src="Lightbox\LightboxScript.js" defer></script> -->
+    <script src="Lightbox/lightbox.js" defer ></script>
+    <script src="index/index.js" defer></script>
+</head>
+<body>
+    <!-- Nav bar -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button onclick="location.href='index.html'" type="button">Miłosz Studziżba</button>
+            </div>
+            <div class="nav-center">
+                <button onClick="location.href='#photography'">Photography</button>
+                <button onClick="location.href='#CGI'">CGI</button>
+                <button onClick="location.href='#webdev'">Webdev</button>
+            </div>
+            <div class="nav-right">
+                <button>Contact</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Photography Margin Menus-->
+    <div class="photography-right-menu">
+        <button onClick="location.href='#photography'">Photography</button>
+        <button onClick="location.href='#CGI'">CGI</button>
+        <button onClick="location.href='#webdev'">Webdev</button>
+    </div>
+    <div class="photography-left-menu">
+        <p class="menu-title">Photography</p>
+    </div>
+    <!-- CGI Margin Menus-->
+    <div class="CGI-left-menu">
+        <p class="menu-title">CGI</p>
+    </div>
+
+
+    <!-- Photography Collection-->
+    <h2 class="type-title" id="photography">Photography</h2>
+    <div class="photo-grid">
+        <div class="grid-element">
+            <img src="img\photography\_DSC9492v2.jpg" alt="" onclick="openModal();currentSlide(1)">
+           <!-- <div class="img-controls">
+                <div class="img-control-button" id="info-button">
+                    <img src="img\ico\info.svg" alt="" class="full-screen-button">
+                </div>
+            </div> -->
+        </div>
+        <div class="grid-element">
+            <img src="img\photography\_DSC9503.jpg" alt="" onclick="openModal();currentSlide(2)">
+        </div>
+        <div class="grid-element">
+            <img src="img\photography\_DSC9613v3.jpg" alt="" onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="grid-element">
+            <img src="img\photography\_DSC9711.jpg" alt="" onclick="openModal();currentSlide(4)">
+        </div>
+        <div class="grid-element">
+            <img src="img\photography\_DSC9550v3.jpg" alt="" onclick="openModal();currentSlide(5)">
+        </div>
+        <div class="grid-element">
+            <img src="img\photography\_DSC0031v2.jpg" alt="" onclick="openModal();currentSlide(6)">
+        </div>
+        <div class="grid-element">
+            <img src="img\photography\_DSC9660.jpg" alt="" onclick="openModal();currentSlide(7)">
+        </div>
+        <div class="grid-element">
+            <img src="img\photography\_DSC9767.jpg" alt="" onclick="openModal();currentSlide(8)">
+        </div>
+        <div class="grid-element">
+            <img src="img\photography\_DSC9932.jpg" alt="" onclick="openModal();currentSlide(9)">
+        </div>
+    </div>
+    <!-- CGI Collection-->
+    <h2 class="type-title" id="CGI">Computer Generated Imagery</h2>
+    <div class="photo-grid">
+        <div>
+            <video src="vid\CGI\Alive360p.mp4" onclick="openModalCGI();currentSlideCGI(1)" autoplay muted loop disablePictureInPicture></video>
+        </div>
+        <div>
+            <video src="vid\CGI\NMixed360p.mp4" onclick="openModalCGI();currentSlideCGI(2)" autoplay muted loop disablePictureInPicture></video>
+        </div>
+        <div>
+            <video src="vid\CGI\blue-sphere-index360p.mp4" onclick="openModalCGI();currentSlideCGI(3)" autoplay muted loop disablePictureInPicture></video>
+        </div>
+        <div>
+            <video src="vid\CGI\cube-index360p.mp4" onclick="openModalCGI();currentSlideCGI(4)" muted autoplay loop disablePictureInPicture></video>
+        </div>
+        <div>
+            <video src="vid\CGI\screen-coding.mp4" onclick="openModalCGI();currentSlideCGI(5)" muted autoplay loop disablePictureInPicture></video>
+        </div>
+        <div>
+            <video src="vid\CGI\camera.mp4" onclick="openModalCGI();currentSlideCGI(6)" muted autoplay loop disablePictureInPicture></video>
+        </div>
+        <div>
+            <img src="img\CGI\cosmetics-s1.png" onclick="openModalCGI();currentSlideCGI(7)" >
+        </div>
+        <div>
+            <img src="img\CGI\cosmetics-s2.png" onclick="openModalCGI();currentSlideCGI(8)" >
+        </div>
+        <div>
+            <img src="img\CGI\cosmetics-s3.png" onclick="openModalCGI();currentSlideCGI(9)" >
+        </div>
+        <div>
+            <video src="vid\CGI\cosmetics.mp4" onclick="openModalCGI();currentSlideCGI(10)" muted autoplay loop disablePictureInPicture></video>
+        </div>
+    </div>
+    <!-- Web Developement Collection-->
+    <h2 class="type-title" id="webdev">Web Developement</h2>
+    <div class="photo-grid">
+        <div>
+            <video src="vid\Webdev\AMJ-website-preview.mp4" autoplay muted loop disablePictureInPicture></video>
+        </div>
+        <div>
+            <video src="vid\Webdev\mist-website.mp4" autoplay muted loop disablePictureInPicture></video>
+        </div>
+
+    </div>
+
+
+
+
+            <!--Photography Lightbox-->
+    <div class="lightbox-1" id="lightbox-photography">
+            <!--Put images here-->
+        <img src="img\photography\_DSC9492v2.jpg" alt="" class="img-test">
+        <img src="img\photography\_DSC9503.jpg" alt="">
+        <img src="img\photography\_DSC9613v3.jpg" alt="">
+        <img src="img\photography\_DSC9711.jpg" alt="">
+        <img src="img\photography\_DSC9550v3.jpg" alt="">
+        <img src="img\photography\_DSC0031v2.jpg" alt="">
+        <img src="img\photography\_DSC9660.jpg" alt="">
+        <img src="img\photography\_DSC9767.jpg" alt="">
+        <img src="img\photography\_DSC9932.jpg" alt="">
+            
+        <div class="lightbox-controls" onclick="closeLightbox()">
+            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <h class="close" onclick="closeModal()">x</h>
+        </div>
+    </div>
+            <!-- CGI Lightbox-->
+    <div class="lightbox-1" id="lightbox-CGI">
+        <!--Put images here-->
+        <video src="vid\CGI\AliveWeb.mp4" autoplay muted loop></video>
+        <video src="vid\CGI\NMixedWeb.mp4" autoplay muted loop></video>
+        <video src="vid\CGI\blue-sphere-index.mp4" autoplay muted loop></video>
+        <video src="vid\CGI\cube-index.mp4" autoplay muted loop></video>
+        <video src="vid\CGI\screen-coding.mp4" autoplay muted loop></video>
+        <video src="vid\CGI\camera.mp4" autoplay muted loop></video>
+        <img src="img\CGI\cosmetics-s1.png" alt="">
+        <img src="img\CGI\cosmetics-s2.png" alt="">
+        <img src="img\CGI\cosmetics-s3.png" alt="">
+        <video src="vid\CGI\cosmetics.mp4" autoplay muted loop></video>
+        
+    <div class="lightbox-controls" >
+        <a class="previous" onclick="plusSlidesCGI(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlidesCGI(1)">&#10095;</a>
+        <h class="close" onclick="closeModalCGI()">x</h>
+    </div>
+</div>
+</body>
+</html>
