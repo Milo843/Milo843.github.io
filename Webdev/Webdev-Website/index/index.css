@@ -28,7 +28,6 @@
 
 }
 
-
 #vid-1 {
     pointer-events: none;
 }
@@ -79,7 +78,6 @@
     display: inline-block;
     width: fit-content;
     border-radius: var(--border-radius-button);
-    
 }
 .main-lockup-button:hover {
     background-color:#506BFC ;

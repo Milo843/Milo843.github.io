@@ -6,9 +6,6 @@
     --nav-bar-font-family:'Figtree', sans-serif;
     --nav-grid-gap:2.25rem
 }
-a {
-    text-decoration: none;
-}
 .main-nav {
     z-index: 3;
     overflow: hidden;
@@ -16,8 +13,6 @@ a {
     top: 0;
     height: 3.5rem;
     width: 100%;
-    
-    
 }
 .nav-container {
     position: relative;
@@ -48,12 +43,6 @@ a {
     gap: var(--nav-grid-gap);
 }
 
-.nav-left button {
-    margin-left: 0%;
-    margin-right: 0%;
-    padding-left: 0%;
-    padding-right: 0%;
-}
 .nav-left a:hover {
     margin-left: calc(0rem - var(--padding-horizontal-nav-elements));
     margin-right: calc(0rem - var(--padding-horizontal-nav-elements)) ;
@@ -67,7 +56,7 @@ a {
 
 .nav-right a:hover {
     margin-left: calc(0rem - var(--padding-horizontal-nav-elements));
-    margin-right: calc(0rem - var(--padding-horizontal-nav-elements)) ;
+    margin-right: calc(0rem - var(--padding-horizontal-nav-elements));
     padding-left: var(--padding-horizontal-nav-elements);
     padding-right: var(--padding-horizontal-nav-elements);
 }
@@ -80,7 +69,6 @@ a {
     align-items: center;
 }
 .nav-container a:hover {
-    
     transition: 20ms;
     background-color: rgba(0, 0, 0, 0.1);
     

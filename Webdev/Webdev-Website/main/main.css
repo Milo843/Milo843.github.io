@@ -14,9 +14,14 @@
 * {
     margin: 0;
     box-sizing: border-box;
+
 }
+
 button {
     background-color: transparent;
     border: none;
     display: inline-block;
+}
+a {
+    text-decoration: none;
 }
