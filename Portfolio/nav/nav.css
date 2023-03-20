@@ -96,3 +96,17 @@
     background-color: rgba(0, 0, 0, 0.1);
     
 }
+
+
+@media (max-width: 480px) {
+
+    
+    .nav-container button {
+
+        font-size: .4rem;
+
+    }
+    
+    
+    
+    }
