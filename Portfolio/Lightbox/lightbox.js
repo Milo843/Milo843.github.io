@@ -33,7 +33,7 @@ function currentSlide(n) {
 // Controls which picture is shown and which are hidden
 function showSlides(n) {
     var i;
-    var slides = document.querySelectorAll('#lightbox-photography img');
+    var slides = document.querySelectorAll('#lightbox-photography img, #lightbox-photography video');
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
@@ -48,7 +48,18 @@ function showSlides(n) {
 
 //close lightbox by clicking outside image/arrows
 
+$(".lightbox-1").click(function(e) 
+{
+    var container = $("img, video, a");
 
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        closeModal(); 
+    }
+});  
+
+/*
 $(document).click(function(e) 
 {
     var container = $("img, video, a");
@@ -59,17 +70,14 @@ $(document).click(function(e)
         closeModal(); 
     }
 });  
-/*
-    function closeLightbox() {
-        var container = document.querySelectorAll("img, video, a");
-        if (!container.is(e.target))
-        {
-            closeModal(); 
-        }
-    };
-
 
 */
+
+
+
+
+
+
 
     function openModalCGI() {
         document.getElementById("lightbox-CGI").style.display = "block";
@@ -148,7 +156,6 @@ $(function() {
           console.log("clearTimer");
           clearTimeout(timer);
           timer = 0;
-          $(".lightbox-controls").removeClass("inactive");
           console.log("fadeIn");
           $('html').css({
               cursor: ''
@@ -170,10 +177,10 @@ $(function() {
           });
           fadeInBuffer = true;
           
-      }, 800)
+      }, 1600)
   });
   $('.img-test').css({
       cursor: 'default'
   });
-  $(".lightbox-controls").removeClass("inactive");
+
 });
