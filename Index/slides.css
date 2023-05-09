@@ -2,14 +2,14 @@
     visibility: visible;
     opacity: 1;
     transition: 1s;
-    object-position: bottom left;
+    object-position: center;
     animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 .slide-hidden {
-
+    object-position: top;
     visibility: hidden;
     opacity: 0;
 }
