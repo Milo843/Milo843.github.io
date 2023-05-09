@@ -1,7 +1,9 @@
 var divPhotography = document.querySelector('#E2');
 var divCgi = document.querySelector('#E4');
+var divWebdev = document.querySelector('#E3')
 var slidePhotography = document.querySelector('#photography-vid');
 var slideCgi = document.querySelector('#cgi-vid');
+var slideWebdev = document.querySelector('#webdev-vid')
 var slidesVisible = document.querySelector('.slide-visible');
 var slides = document.querySelectorAll('.slide');
 
@@ -31,7 +33,17 @@ divCgi.addEventListener('mouseover', function () {
     playVideos();
 })
 
-
+divWebdev.addEventListener('mouseover', function () {
+    slides.forEach(function (slide) {
+        slide.classList.remove('slide-visible');
+    });
+    slides.forEach(function (slide) {
+        slide.classList.add('slide-hidden');
+    });
+    slideWebdev.classList.remove('slide-hidden');
+    slideWebdev.classList.add('slide-visible');
+    playVideos();
+})
 /*
 divPhotography.addEventListener('mouseover', function () {
     slideCgi.classList.add('index-hidden');

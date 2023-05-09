@@ -13,3 +13,13 @@
     visibility: hidden;
     opacity: 0;
 }
+
+#webdev-vid {
+
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    /* Safari and Chrome */
+    -moz-transform: rotateY(180deg);
+    /* Firefox */
+
+}
