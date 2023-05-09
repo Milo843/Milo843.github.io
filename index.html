@@ -1,177 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mist Photo Design</title>
-    <link rel="stylesheet" href="Index/Index.css">
-    <link rel="stylesheet" href="Carousel/CollectionsCarouselV2.css">
-    <script src="Carousel/CarouselScript.js" defer></script>
-    <script src="Index/Index.js" defer></script>
-    <link rel="stylesheet" href="Main/Main.css">
-    <link rel="stylesheet" href="nav/nav.css">
-    <script src="Main/Main.js" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="Main\jquery.js"></script>
-    <script src="Index\uncover.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mist Photo Design</title>
+  <link rel="stylesheet" href="Index/Index.css">
+  <link rel="stylesheet" href="Carousel/CollectionsCarouselV2.css">
+  <script src="Carousel/CarouselScript.js" defer></script>
+  <script src="Index/Index.js" defer></script>
+  <link rel="stylesheet" href="Main/Main.css">
+  <link rel="stylesheet" href="nav/nav.css">
+  <link rel="stylesheet" href="Index\slides.css">
+  <script src="Main/Main.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="Main\jquery.js"></script>
+  <script src="Index\uncover.js" defer></script>
+  <script src="Index\slides.js" defer></script>
+
 </head>
+
 <body>
   <!--main-nav imports code from nav/nav.html using script loacted in Main/Main.js-->
-   <nav id="main-nav" ></nav>
-   <script src="nav/nav.js"></script>
+  <nav id="main-nav"></nav>
+  <script src="nav/nav.js"></script>
   <!--Navigation bar contents end here-->
-    <!---->
-    <div class="TopImgContainer">
-            
-        <video autoplay muted loop id="vid1"><source src="Vid\VapourVideo.mp4" type="video/mp4" preload="none"> 
-        </video> 
-        <div class="left-index-text">
-          <div class="title test1" onclick="window.location='Portfolio/index.html'">
-            <h1> MIŁOSZ STUDZIŻBA</h1>
-            <div class="line-1 index-hidden"></div>
-            <div class="line-0 index-hidden"></div>
-            <div class="name-executor" id="E1"></div>    
-          </div>
-          <a class="test1" href="Photography.html" id="E2">PHOTOGRAPHY</a>
-          <a class="test1" href="Webdev.html" id="E3">WEB DEVELOPEMENT</a>
-          <a class="test1" href="GraphicDesign.html" id="E4">CGI & GRAPHIC DESIGN</a>
-        </div>
-        
-        
-        
-        <div class="arrow-down" onclick="window.location='#scroll-1'">
-          <a>&#8250;</a>
-        </div>
+  <!---->
+  <div class="TopImgContainer">
+    <div class="slides-container">
+      <video autoplay muted loop id="photography-vid" class="slide">
+        <source src="vid\VapourVideo.mp4" type="video/mp4" preload="none">
+      </video>
+      <video autoplay muted loop id="cgi-vid" class="slide">
+        <source src="vid\cgi\Cosmetics-g-web.mp4" type="video/mp4" preload="none">
+      </video>
+    </div>
+    <div class="left-index-text">
+      <div class="title test1" onclick="window.location='./'">
+        <h1> MIŁOSZ STUDZIŻBA</h1>
+        <div class="line-1 index-hidden"></div>
+        <div class="line-0 index-hidden"></div>
+        <div class="name-executor" id="E1"></div>
+      </div>
+      <a class="test1" href="Photography.html" id="E2">PHOTOGRAPHY</a>
+      <a class="test1" href="Webdev.html" id="E3">WEB DEVELOPEMENT</a>
+      <a class="test1" href="GraphicDesign.html" id="E4">CGI & GRAPHIC DESIGN</a>
     </div>
 
-    <div class="IndexAboutMeContainer test index-hidden" id="C1">
-      <p class="AboutMeTitle">
-        About Me
-      </p>
-      <a class="AboutMeDescription">
-       I am a photography student who specialises in still life photography. Due to accelerating development of technology and constant changes within economic landscape I keep my practice flexible, which is why recently I also started scrupulously exploring Graphic design, CGI and Web Development.
-        <!-- 
+
+
+    <div class="arrow-down" onclick="window.location='#scroll-1'">
+      <a>&#8250;</a>
+    </div>
+  </div>
+
+  <!--about me uncovered grid-->
+  <div class="IndexAboutMeContainer test index-hidden" id="C1">
+    <p class="AboutMeTitle">
+      About Me
+    </p>
+    <a class="AboutMeDescription">
+      I am a photography student who specialises in still life photography. Due to accelerating development of
+      technology and constant changes within economic landscape I keep my practice flexible, which is why recently I
+      also started scrupulously exploring Graphic design, CGI and Web Development.
+      <!-- 
        My name is Milosz Studzizba I am a visual artist based in Norwich. 
       I used to specialise in product photography however in order to adapt to the accelerating development of technology and everchanging economic landscape I decided to learn CGI and web development. Even though that journey partially started out of necessity I grew passionate about both of these mediums and the possibilities they unlocked for me. The new set of skills not only increased my flexibility but also gave me a unique perspective on what visual art is and allowed me to deepen my understanding of each of the mediums.
         -->
     </a>
-      <div class="Contacts">
-        <a>Telephone:XXX-XXX-XXX</a>
-        <a>E-mail:mstuXXXXXX@gmail.com</a>
-      </div>
+    <div class="Contacts">
+      <a>Telephone:XXX-XXX-XXX</a>
+      <a>E-mail:mstuXXXXXX@gmail.com</a>
     </div>
-    <div class="IndexPhotoGrid test index-hidden" id="C2">
-      <a href="PCollectionPets.html"><div class="PhotoCard">
-        <img src="Img\Pets\L\pe1.jpg" loading="lazy">
+  </div>
+  <!--Photography uncovered grid-->
+  <div class="IndexPhotoGrid test index-hidden" id="C2">
+    <a href="PCollectionPets.html">
+      <div class="PhotoCard">
+        <img src="img\Pets\L\pe1.jpg" loading="lazy">
         <p>Pets</p>
-      </div></a>
-      <a href="PCollectionAnimals.html"><div class="PhotoCard" onclick="location.href='PCollectionAnimals.html'">
-        <img src="Img\Animals\L\a2.jpg" loading="lazy">
+      </div>
+    </a>
+    <a href="PCollectionAnimals.html">
+      <div class="PhotoCard" onclick="location.href='PCollectionAnimals.html'">
+        <img src="img\Animals\L\a2.jpg" loading="lazy">
         <p>Animals</p>
-      </div></a>
-      <a href="PCollectionProtest.html"><div class="PhotoCard" onclick="location.href='PCollectionProtest.html'">
-        <img src="Img\Protest\L\p4.jpg" loading="lazy">
+      </div>
+    </a>
+    <a href="PCollectionProtest.html">
+      <div class="PhotoCard" onclick="location.href='PCollectionProtest.html'">
+        <img src="img\Protest\L\p4.jpg" loading="lazy">
         <p>Protest</p>
-      </div></a>
-      <a href="PCollectionAnimals.html"><div class="PhotoCard" onclick="location.href='PCollectionAnimals.html'">
-        <img src="Img\Animals\L\a1.jpg" loading="lazy">
+      </div>
+    </a>
+    <a href="PCollectionAnimals.html">
+      <div class="PhotoCard" onclick="location.href='PCollectionAnimals.html'">
+        <img src="img\Animals\L\a1.jpg" loading="lazy">
         <p>Animals</p>
-      </div></a>
-      <a href="PCollectionMovement.html"><div class="PhotoCard" onclick="location.href='PCollectionMovement.html'">
-        <img src="Img\Movement\L\m2.jpg" loading="lazy">
+      </div>
+    </a>
+    <a href="PCollectionMovement.html">
+      <div class="PhotoCard" onclick="location.href='PCollectionMovement.html'">
+        <img src="img\Movement\L\m2.jpg" loading="lazy">
         <p>Movement</p>
-      </div></a>
-      <a href="PCollectionProtest.html"><div class="PhotoCard" onclick="location.href='PCollectionProtest.html'">
-        <img src="Img\Protest\L\p2.jpg" loading="lazy">
+      </div>
+    </a>
+    <a href="PCollectionProtest.html">
+      <div class="PhotoCard" onclick="location.href='PCollectionProtest.html'">
+        <img src="img\Protest\L\p2.jpg" loading="lazy">
         <p>Protest</p>
-      </div></a>
-      <a href="PCollectionProtestSP.html"><div class="PhotoCard" onclick="location.href='PCollectionProtestSP.html'">
-        <img src="Img\ProtestSP\L\spComb.jpg" loading="lazy" >
+      </div>
+    </a>
+    <a href="PCollectionProtestSP.html">
+      <div class="PhotoCard" onclick="location.href='PCollectionProtestSP.html'">
+        <img src="img\ProtestSP\L\spComb.jpg" loading="lazy">
         <p>Protest SP</p>
-      </div></a>
-      <a href="PCollectionVapour.html"><div class="PhotoCard"onclick="location.href='PCollectionVapour.html'">
-        <img src="Img\Vapour\L\v5.jpg" loading="lazy" >
+      </div>
+    </a>
+    <a href="PCollectionVapour.html">
+      <div class="PhotoCard" onclick="location.href='PCollectionVapour.html'">
+        <img src="img\Vapour\L\v5.jpg" loading="lazy">
         <p>Vapour</p>
-      </div></a>
-      <a href="PCollectionVapour.html"><div class="PhotoCard" onclick="location.href='PCollectionVapour.html'">
-        <img src="Img\Vapour\L\v3.jpg" loading="lazy">
+      </div>
+    </a>
+    <a href="PCollectionVapour.html">
+      <div class="PhotoCard" onclick="location.href='PCollectionVapour.html'">
+        <img src="img\Vapour\L\v3.jpg" loading="lazy">
         <p>Vapour</p>
-      </div></a>
+      </div>
+    </a>
+  </div>
+  <!--Webdev uncovered grid-->
+  <div class="IndexVideoFlex test index-hidden" id="C3">
+    <a href="Webdev/Webdev-Website/index.html" target="_blank">
+      <div class="VideoCard">
+        <video muted loop class="Vid1">
+          <source src="Vid/Webdev/webdev-website460p.mp4" type="video/mp4" preload="none">
+        </video>
+      </div>
+    </a>
+    <a href="Webdev/Webdev-Website/index.html" target="_blank">
+      <div class="VideoCard">
+        <video muted loop class="Vid1">
+          <source src="Vid/Webdev/webdev-about-us480p.mp4" type="video/mp4" preload="none">
+        </video>
+      </div>
+    </a>
+  </div>
+  <!--CGI uncovered grid-->
+  <div class="Index-CGI-Grid test index-hidden" id="C4" onclick="location.href='GraphicDesign.html'">
+    <div class="CGI-Card">
+      <video class="CGI-video" src="CGI\Alive\Alive360p.mp4" muted loop disablePictureInPicture></video>
     </div>
+    <div class="CGI-Card">
+      <video class="CGI-video" src="CGI\NMixed\NMixed360p.mp4" muted loop disablePictureInPicture></video>
+    </div>
+    <div class="CGI-Card">
+      <video class="CGI-video" src="CGI\Webdev\cube-index360p.mp4" muted loop disablePictureInPicture></video>
+    </div>
+    <div class="CGI-Card">
+      <video class="CGI-video" src="CGI\Webdev\blue-sphere-index360p.mp4" muted loop disablePictureInPicture></video>
+    </div>
+  </div>
 
-    <div class="IndexVideoFlex test index-hidden" id="C3">
-      <a href="Webdev/Webdev-Website/index.html" target="_blank"><div class="VideoCard">
-        <video muted loop class="Vid1" > <source src="Vid/Webdev/webdev-website460p.mp4" type="video/mp4" preload="none"></video>
-      </div></a>
-      <a href="Webdev/Webdev-Website/index.html" target="_blank"><div class="VideoCard">
-        <video muted loop class="Vid1"> <source src="Vid/Webdev/webdev-about-us480p.mp4" type="video/mp4" preload="none"></video>
-      </div></a>
-    </div>
 
-    <div class="Index-CGI-Grid test index-hidden" id="C4" onclick="location.href='GraphicDesign.html'">
-      <div class="CGI-Card">
-        <video class="CGI-video" src="CGI\Alive\Alive360p.mp4" muted loop disablePictureInPicture></video>
-      </div>
-      <div class="CGI-Card">
-        <video class="CGI-video" src="CGI\NMixed\NMixed360p.mp4" muted loop disablePictureInPicture></video>
-      </div>
-      <div class="CGI-Card">
-        <video class="CGI-video" src="CGI\Webdev\cube-index360p.mp4" muted loop disablePictureInPicture></video>
-      </div>
-      <div class="CGI-Card">
-        <video class="CGI-video" src="CGI\Webdev\blue-sphere-index360p.mp4" muted loop disablePictureInPicture></video>
-      </div>
-    </div>
 
-    <!--Collections Carousel-->
-    <div id="scroll-1"></div>     
-    <div class="carousel-title-flex">
-    <a class="carousel-title">Photography</a>
-    <div class="line-carousel-title-1"></div>
-    </div>
-    <div class="row" >
-          <div class="header">
-            <div class="progress-bar"></div>
-          </div>
-          <div class="container">
-            <button class="handle left-handle">
-              <div class="text">&#8249;</div>
-            </button>
-            <div class="slider">
-              <div class="image-card" onclick="location.href='PCollectionPets.html';">
-                <img src="Img\Pets\L\pe1.jpg"  loading="lazy">
-                <a>Pets</a>
-              </div>
-              <div class="image-card" onclick="window.location='PCollectionAnimals.html'">
-                <img src="Img\Animals\L\a2.jpg" loading="lazy">
-                <a>Animals</a>
-              </div>
-              <div class="image-card" onclick="window.location='PCollectionMovement.html'">
-                <img src="Img\Movement\L\m2.jpg" loading="lazy">
-                <a>Movement</a>
-              </div>
-              <div class="image-card" onclick="window.location='PCollectionVapour.html'">
-                <img src="Img\Vapour\L\v5.jpg" loading="lazy">
-                <a>Vapour</a>
-              </div>
-              <div class="image-card" onclick="window.location='PCollectionProtest.html'">
-                <img src="Img\Protest\L\p2.jpg" loading="lazy">
-                <a>Protest</a>
-              </div>
-              <div class="image-card" onclick="window.location='PCollectionProtestSP.html'">
-                <img src="Img\ProtestSP\L\spComb.jpg" loading="lazy">
-                <a>Protest SP</a>
-              </div>
-            </div>
-            <button class="handle right-handle">
-              <div class="text">&#8250;</div>
-            </button>
-          </div>
-        </div>
-        <!--Collections Carousel ends-->
-        <div class="index-visible"></div>
-        <!--Footer imports html code from Main/Footer.html using script from Main/Main.js-->
-        <footer id="Footer"></footer>
+  <div class="index-visible"></div>
+  <!--Footer imports html code from Main/Footer.html using script from Main/Main.js-->
+  <footer id="Footer"></footer>
 </body>
+
 </html>
