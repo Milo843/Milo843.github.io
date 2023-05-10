@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mist Photo Design</title>
+    <link rel="stylesheet" href="Main/Main.css">
+    <link rel="stylesheet" href="nav/nav.css">
+    <link rel="stylesheet" href="cgi/cgi.css">
+    <link rel="stylesheet" href="Lightbox\lightbox.css">
+    <script src="Main/jquery.js"></script>
+    <script src="Lightbox/lightbox.js" defer></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+    <script src="Main/Main.js" defer></script>
+
+</head>
+
+<body>
+    <!--main-nav imports code from nav/nav.html using script loacted in Main/Main.js-->
+    <nav id="main-nav"></nav>
+    <script src="nav/nav.js"></script>
+    <div class="nav-dummy"></div>
+
+
+    <!-- CGI Main Collection-->
+    <h2 class="type-title" id="CGI-main">Computer Generated Imagery</h2>
+    <div class="photo-grid">
+        <div>
+            <video src="vid\CGI-preview\cosmetics-g-360p.mp4" onclick="openModal();currentSlide(1)" muted loop
+                disablePictureInPicture></video>
+        </div>
+        <div>
+            <video src="vid\CGI-preview\headphones-360p.mp4" onclick="openModal();currentSlide(2)" muted loop
+                disablePictureInPicture></video>
+        </div>
+    </div>
+
+    <!-- CGI Modelling Collection-->
+    <h2 class="type-title" id="CGI-models">Computer Generated Imagery: Models</h2>
+    <div class="photo-grid">
+        <div>
+            <video src="vid\CGI\camera.mp4" onclick="openModalM();currentSlideM(1)" muted loop
+                disablePictureInPicture></video>
+        </div>
+        <div>
+            <video src="vid\CGI\screen-coding.mp4" onclick="openModalM();currentSlideM(2)" muted loop
+                disablePictureInPicture></video>
+        </div>
+        <div>
+            <video src="vid\CGI\cosmetics.mp4" onclick="openModalM();currentSlideM(3)" muted loop
+                disablePictureInPicture></video>
+        </div>
+    </div>
+    <!-- CGI GeoArt Collection-->
+    <h2 class="type-title" id="CGI-geoart">Computer Generated Imagery: GeoArt</h2>
+    <div class="photo-grid">
+        <div>
+            <video src="vid\CGI\blue-sphere-rebirth360p.mp4" onclick="openModalCGI();currentSlideCGI(1)" muted loop
+                disablePictureInPicture></video>
+        </div>
+        <div>
+            <video src="vid\CGI\cube-index360p.mp4" onclick="openModalCGI();currentSlideCGI(2)" muted loop
+                disablePictureInPicture></video>
+        </div>
+        <div>
+            <video src="vid\CGI\NMixed360p.mp4" onclick="openModalCGI();currentSlideCGI(3)" muted loop
+                disablePictureInPicture></video>
+        </div>
+        <div>
+            <video src="vid\CGI\Alive360p.mp4" onclick="openModalCGI();currentSlideCGI(4)" muted loop
+                disablePictureInPicture></video>
+        </div>
+
+    </div>
+    <!--Photography Lightbox-->
+    <div class="lightbox-1" id="lightbox-photography">
+        <!--Put images here-->
+        <img src="img/bistro-swim/h/DSC9492.jpg" alt="" class="img-test">
+        <img src="img/bistro-swim/h/DSC9503.jpg" alt="">
+        <img src="img/bistro-swim/h/DSC9550.jpg" alt="">
+        <img src="img/bistro-swim/h/DSC9711.jpg" alt="">
+        <img src="img/bistro-swim/h/DSC9767.jpg" alt="">
+        <img src="img/bistro-swim/h/DSC9932.jpg" alt="">
+        <img src="img/Vapour/H/v4.jpg" alt="">
+        <img src="img/Vapour/H/v3.jpg" alt="">
+        <img src="img/Vapour/H/v5.jpg" alt="">
+
+        <div class="lightbox-controls">
+            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <h class="close" onclick="closeModal()">x</h>
+        </div>
+    </div>
+    <footer id="Footer"></footer>
+</body>
