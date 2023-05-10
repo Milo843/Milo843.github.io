@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400&display=swap');
+
 :root {
-    --padding-horizontal-nav-elements:1rem;
-    --margin-horizontal-nav-elements:1rem;
-    --button-border-radius:.5rem;
-    --nav-bar-font-family:'Figtree', sans-serif;
-    --nav-bar-height:3.5rem;
-    --nav-font-size:1.2rem;
-    --nav-grid-gap:2.25rem
+    --padding-horizontal-nav-elements: 1rem;
+    --margin-horizontal-nav-elements: 1rem;
+    --button-border-radius: .5rem;
+    --nav-bar-font-family: 'Figtree', sans-serif;
+    --nav-bar-height: 3.5rem;
+    --nav-font-size: 1.2rem;
+    --nav-grid-gap: 2.25rem
 }
+
 a {
     text-decoration: none;
 }
+
 .main-nav {
     z-index: 111;
     overflow: hidden;
@@ -22,9 +25,12 @@ a {
     backdrop-filter: blur(5px);
     font-size: var(--nav-font-size);
 }
+
 .nav-dummy {
     height: var(--nav-bar-height);
+
 }
+
 .nav-container {
     position: relative;
     left: 50%;
@@ -57,10 +63,11 @@ a {
 
 .nav-left a:hover {
     margin-left: calc(0rem - var(--padding-horizontal-nav-elements));
-    margin-right: calc(0rem - var(--padding-horizontal-nav-elements)) ;
+    margin-right: calc(0rem - var(--padding-horizontal-nav-elements));
     padding-left: var(--padding-horizontal-nav-elements);
     padding-right: var(--padding-horizontal-nav-elements);
 }
+
 .nav-center a {
     padding-left: var(--padding-horizontal-nav-elements);
     padding-right: var(--padding-horizontal-nav-elements);
@@ -68,10 +75,11 @@ a {
 
 .nav-right a:hover {
     margin-left: calc(0rem - var(--padding-horizontal-nav-elements));
-    margin-right: calc(0rem - var(--padding-horizontal-nav-elements)) ;
+    margin-right: calc(0rem - var(--padding-horizontal-nav-elements));
     padding-left: var(--padding-horizontal-nav-elements);
     padding-right: var(--padding-horizontal-nav-elements);
 }
+
 .nav-container a {
     color: var(--font-color-bright-secondary);
     font-family: var(--nav-bar-font-family);
@@ -79,8 +87,9 @@ a {
     display: flex;
     align-items: center;
 }
+
 .nav-container a:hover {
-    
+
     transition: 20ms;
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--primary-color);

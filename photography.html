@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mist Photo Design</title>
+    <link rel="stylesheet" href="Main/Main.css">
+    <link rel="stylesheet" href="nav/nav.css">
+    <link rel="stylesheet" href="photography/photography.css">
+    <link rel="stylesheet" href="Lightbox\lightbox.css">
+    <script src="Main/jquery.js"></script>
+    <script src="Lightbox/lightbox.js" defer></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+    <script src="Main/Main.js" defer></script>
+
+</head>
+
+<body>
+    <!--main-nav imports code from nav/nav.html using script loacted in Main/Main.js-->
+    <nav id="main-nav"></nav>
+    <script src="nav/nav.js"></script>
+    <div class="nav-dummy"></div>
+    <!-- Photography Collection-->
+    <h2 class="type-title" id="photography">Photography</h2>
+
+    <div class="photo-grid">
+        <div class="grid-element">
+            <img src="img/bistro-swim/l/DSC9492.jpg" alt="" onclick="openModal();currentSlide(1)">
+            <!-- <div class="img-controls">
+                <div class="img-control-button" id="info-button">
+                    <img src="img\ico\info.svg" alt="" class="full-screen-button">
+                </div>
+            </div> -->
+        </div>
+        <div class="grid-element">
+            <img src="img/bistro-swim/l/DSC9503.jpg" alt="" onclick="openModal();currentSlide(2)">
+        </div>
+        <div class="grid-element">
+            <img src="img/bistro-swim/l/DSC9550.jpg" alt="" onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="grid-element">
+            <img src="img/bistro-swim/l/DSC9711.jpg" alt="" onclick="openModal();currentSlide(4)">
+        </div>
+        <div class="grid-element">
+            <img src="img/bistro-swim/l/DSC9767.jpg" alt="" onclick="openModal();currentSlide(5)">
+        </div>
+        <div class="grid-element">
+            <img src="img/bistro-swim/l/DSC9932.jpg" alt="" onclick="openModal();currentSlide(6)">
+        </div>
+    </div>
+
+    <!--Photography Lightbox-->
+    <div class="lightbox-1" id="lightbox-photography">
+        <!--Put images here-->
+        <img src="img/bistro-swim/h/DSC9492.jpg" alt="" class="img-test">
+        <img src="img/bistro-swim/h/DSC9503.jpg" alt="">
+        <img src="img/bistro-swim/h/DSC9550.jpg" alt="">
+        <img src="img/bistro-swim/h/DSC9711.jpg" alt="">
+        <img src="img/bistro-swim/h/DSC9767.jpg" alt="">
+        <img src="img/bistro-swim/h/DSC9932.jpg" alt="">
+
+
+        <div class="lightbox-controls">
+            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <h class="close" onclick="closeModal()">x</h>
+        </div>
+    </div>
+    <footer id="Footer"></footer>
+</body>
