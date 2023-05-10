@@ -1,41 +1,46 @@
 :root {
-    --index-horizontal-padding:1.8rem;
-    --index-a-margin:.8rem;
-    --horizontal-padding-photocard:10%;
-    --vertical-padding-photocard:2.5%;
+    --index-horizontal-padding: 1.8rem;
+    --index-a-margin: .8rem;
+    --horizontal-padding-photocard: 10%;
+    --vertical-padding-photocard: 2.5%;
 }
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 img {
     pointer-events: none;
-  } 
+}
+
 /* Top Image with Name */
 .TopImgContainer {
-width: 100%;
-height: 100vh;
-z-index: -1;
-background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.4);
 }
+
 .TopImgContainer img {
     width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: cover;
-  z-index: -2;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -2;
 }
+
 .TopImgContainer video {
     width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: cover;
-  z-index: -2;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -2;
 }
+
 .Vid1 {
     pointer-events: none;
 }
+
 .left-index-text {
     width: 42%;
     height: 100vh;
@@ -44,6 +49,7 @@ background-color: rgba(0, 0, 0, 0.4);
     position: relative;
     left: 8%;
 }
+
 .title {
     margin-top: 14vh;
     position: absolute;
@@ -53,6 +59,7 @@ background-color: rgba(0, 0, 0, 0.4);
 
 
 }
+
 .left-index-text h1 {
     line-height: 150%;
     color: var(--font-color-bright-primary);
@@ -63,6 +70,7 @@ background-color: rgba(0, 0, 0, 0.4);
     left: 50%;
     transform: translateX(-50%);
 }
+
 .name-executor {
     height: 65%;
     width: 70%;
@@ -73,10 +81,11 @@ background-color: rgba(0, 0, 0, 0.4);
     border-radius: 0 0 60% 0;
     transform: translate(-50%, -50%);
 }
+
 .left-index-text a {
-    align-self:stretch;
+    align-self: stretch;
     position: relative;
-    top:calc(100% - 3 * var(--font-size-secondary-elements) - 18%);
+    top: calc(100% - 3 * var(--font-size-secondary-elements) - 18%);
     text-decoration: none;
     font-weight: bold;
     font-size: var(--font-size-secondary-elements);
@@ -85,21 +94,24 @@ background-color: rgba(0, 0, 0, 0.4);
     margin-bottom: var(--index-a-margin);
     width: fit-content;
 }
+
 .left-index-text :nth-child(2) {
     margin-left: calc(0rem - var(--index-horizontal-padding));
 
 }
+
 .left-index-text :nth-child(4) {
-    margin-left:var(--index-horizontal-padding);
+    margin-left: var(--index-horizontal-padding);
 
 }
 
 .left-index-text a:hover {
     background-color: rgba(0, 0, 0, .8);
     backdrop-filter: blur(10px);
-    border-radius: 1vw;  
-    color: var(--primary-color);  
+    border-radius: 1vw;
+    color: var(--primary-color);
 }
+
 .line-0 {
     visibility: hidden;
     opacity: 0;
@@ -108,12 +120,13 @@ background-color: rgba(0, 0, 0, 0.4);
     max-width: 28vw;
     height: 0px;
     margin-bottom: 1rem;
-    left:50%;
+    left: 50%;
     transform: translate(-49%, -13vw);
     align-self: center;
     text-align: center;
     transition: 300ms;
 }
+
 .line-1 {
     visibility: hidden;
     opacity: 0;
@@ -122,7 +135,7 @@ background-color: rgba(0, 0, 0, 0.4);
     width: 42vw;
     height: 0px;
     margin-bottom: 1rem;
-    left:50%;
+    left: 50%;
     transform: translate(-45%, -2vw);
     align-self: center;
     text-align: center;
@@ -133,13 +146,14 @@ background-color: rgba(0, 0, 0, 0.4);
 
 .IndexPhotoGridContainer {
     position: absolute;
-    top:10%;
-    right:5%;
+    top: 10%;
+    right: 5%;
     width: 40%;
     height: 80%;
     background-color: blue;
 
 }
+
 .IndexPhotoGrid {
     display: grid;
     position: absolute;
@@ -163,6 +177,7 @@ background-color: rgba(0, 0, 0, 0.4);
     margin-bottom: 5%;
     overflow: hidden;
 }
+
 .PhotoCard img {
     width: 100%;
     vertical-align: middle;
@@ -170,6 +185,7 @@ background-color: rgba(0, 0, 0, 0.4);
     aspect-ratio: 3 / 2;
     cursor: pointer;
 }
+
 .PhotoCard p {
     visibility: hidden;
     opacity: 0;
@@ -191,6 +207,7 @@ background-color: rgba(0, 0, 0, 0.4);
     transition: 300ms;
     cursor: pointer;
 }
+
 .PhotoCard:hover p {
     visibility: visible;
     opacity: 1;
@@ -212,13 +229,17 @@ background-color: rgba(0, 0, 0, 0.4);
     background-color: rgba(0, 0, 0, .8);
     border-radius: 1vw;
 }
+
 .VideoCard {
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
 .VideoCard video {
     width: 100%;
+
 }
+
 .Index-CGI-Grid {
     display: grid;
     position: absolute;
@@ -228,7 +249,7 @@ background-color: rgba(0, 0, 0, 0.4);
     padding-right: 1%;
     padding-bottom: 1%;
     padding-top: 1%;
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto;
     column-gap: 2%;
     width: 40%;
     transition: 300ms;
@@ -236,15 +257,17 @@ background-color: rgba(0, 0, 0, 0.4);
     background-color: rgba(0, 0, 0, .8);
     border-radius: 1vw;
 }
+
 .CGI-Card {
-   margin: 5%;
+    margin: 5%;
+    cursor: pointer;
 }
+
 .CGI-Card video {
     width: 100%;
     vertical-align: middle;
     margin: 2%;
     aspect-ratio: 16 / 9;
-    cursor: pointer;
     pointer-events: none;
 }
 
@@ -261,6 +284,7 @@ background-color: rgba(0, 0, 0, 0.4);
     transition: 300ms;
     margin-top: 3%;
 }
+
 .IndexAboutMeContainer p {
     padding: 2%;
     padding-left: 3%;
@@ -276,6 +300,7 @@ background-color: rgba(0, 0, 0, 0.4);
     color: var(--primary-color);
     cursor: pointer;
 }
+
 .IndexAboutMeContainer a {
     text-align: justify;
     font-size: 2vw;
@@ -286,10 +311,12 @@ background-color: rgba(0, 0, 0, 0.4);
     border-radius: 1vw;
     cursor: pointer;
 }
+
 .AboutMeDescription {
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, .8);
 }
+
 .Contacts {
     padding-top: 1%;
     padding-bottom: 1%;
@@ -299,12 +326,14 @@ background-color: rgba(0, 0, 0, 0.4);
     background-color: rgba(0, 0, 0, .8);
     border-radius: 1vw;
 }
+
 .Contacts a {
     font-size: 1.5vw;
     padding-bottom: 1%;
-    
-    
+
+
 }
+
 .arrow-down {
     z-index: 0;
     position: absolute;
@@ -323,22 +352,29 @@ background-color: rgba(0, 0, 0, 0.4);
     cursor: pointer;
     backdrop-filter: blur(5px);
     /* Makes text unselectable */
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
     transition: 300ms;
 }
+
 .arrow-down:hover {
     background-color: rgba(255, 255, 255, .2);
 }
-.arrow-down:hover a{
+
+.arrow-down:hover a {
     color: var(--primary-color);
 }
+
 /* Top Image with Name Ends*/
 
 .row {
-    margin-top:3rem;
+    margin-top: 3rem;
 }
 
 
@@ -347,7 +383,7 @@ background-color: rgba(0, 0, 0, 0.4);
 
 /* JavaScript related Classes*/
 .index-hidden {
-    visibility: hidden; 
+    visibility: hidden;
     opacity: 0;
 
 }
@@ -364,45 +400,51 @@ background-color: rgba(0, 0, 0, 0.4);
         max-width: 100%;
         top: 15%;
         left: 50%;
-        transform: translate(-50%,0);
-        
+        transform: translate(-50%, 0);
+
     }
+
     .TopImgContainer .Name h1 {
         font-size: 13vw;
     }
+
     .line-1 {
         position: relative;
         border-bottom: 1px solid var(--primary-color);
         width: 75vw;
         margin-bottom: 1rem;
-        left:50%;
+        left: 50%;
         transform: translate(-50%, -3vw);
         align-self: center;
         text-align: center;
 
     }
+
     .line-0 {
         position: relative;
         border-bottom: 1px solid var(--primary-color);
         max-width: 51vw;
         margin-bottom: 1rem;
         top: 15%;
-        left:50%;
+        left: 50%;
         transform: translate(-49%, -25vw);
         align-self: center;
         text-align: center;
     }
+
     .TopImgContainer .Categories {
         bottom: 13%;
     }
+
     .TopImgContainer .Categories a {
         font-size: 8vw;
         font-weight: bold;
-        
+
     }
+
     .IndexPhotoGridContainer {
         visibility: hidden !important;
         opacity: 0 !important;
     }
-    
+
 }
