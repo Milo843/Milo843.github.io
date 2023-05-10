@@ -14,7 +14,7 @@
     <script src="Lightbox/lightbox.js" defer></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
     <script src="Main/Main.js" defer></script>
-
+    <script src="Main\video-viewport copy.js" defer></script>
 </head>
 
 <body>
@@ -41,15 +41,15 @@
     <h2 class="type-title" id="CGI-models">Computer Generated Imagery: Models</h2>
     <div class="photo-grid">
         <div>
-            <video src="vid\CGI\camera.mp4" onclick="openModalM();currentSlideM(1)" muted loop
+            <video src="vid\CGI\camera.mp4" onclick="openModal();currentSlide(3)" muted loop
                 disablePictureInPicture></video>
         </div>
         <div>
-            <video src="vid\CGI\screen-coding.mp4" onclick="openModalM();currentSlideM(2)" muted loop
+            <video src="vid\CGI\screen-coding.mp4" onclick="openModal();currentSlide(4)" muted loop
                 disablePictureInPicture></video>
         </div>
         <div>
-            <video src="vid\CGI\cosmetics.mp4" onclick="openModalM();currentSlideM(3)" muted loop
+            <video src="vid\CGI\cosmetics.mp4" onclick="openModal();currentSlide(5)" muted loop
                 disablePictureInPicture></video>
         </div>
     </div>
@@ -57,19 +57,19 @@
     <h2 class="type-title" id="CGI-geoart">Computer Generated Imagery: GeoArt</h2>
     <div class="photo-grid">
         <div>
-            <video src="vid\CGI\blue-sphere-rebirth360p.mp4" onclick="openModalCGI();currentSlideCGI(1)" muted loop
+            <video src="vid\CGI\blue-sphere-rebirth360p.mp4" onclick="openModal();currentSlide(6)" muted loop
                 disablePictureInPicture></video>
         </div>
         <div>
-            <video src="vid\CGI\cube-index360p.mp4" onclick="openModalCGI();currentSlideCGI(2)" muted loop
+            <video src="vid\CGI\cube-index360p.mp4" onclick="openModal();currentSlide(7)" muted loop
                 disablePictureInPicture></video>
         </div>
         <div>
-            <video src="vid\CGI\NMixed360p.mp4" onclick="openModalCGI();currentSlideCGI(3)" muted loop
+            <video src="vid\CGI\NMixed360p.mp4" onclick="openModal();currentSlide(8)" muted loop
                 disablePictureInPicture></video>
         </div>
         <div>
-            <video src="vid\CGI\Alive360p.mp4" onclick="openModalCGI();currentSlideCGI(4)" muted loop
+            <video src="vid\CGI\Alive360p.mp4" onclick="openModal();currentSlide(9)" muted loop
                 disablePictureInPicture></video>
         </div>
 
@@ -77,15 +77,15 @@
     <!--Photography Lightbox-->
     <div class="lightbox-1" id="lightbox-photography">
         <!--Put images here-->
-        <img src="img/bistro-swim/h/DSC9492.jpg" alt="" class="img-test">
-        <img src="img/bistro-swim/h/DSC9503.jpg" alt="">
-        <img src="img/bistro-swim/h/DSC9550.jpg" alt="">
-        <img src="img/bistro-swim/h/DSC9711.jpg" alt="">
-        <img src="img/bistro-swim/h/DSC9767.jpg" alt="">
-        <img src="img/bistro-swim/h/DSC9932.jpg" alt="">
-        <img src="img/Vapour/H/v4.jpg" alt="">
-        <img src="img/Vapour/H/v3.jpg" alt="">
-        <img src="img/Vapour/H/v5.jpg" alt="">
+        <video id="video1" src="vid\CGI\cosmetics-g.mp4" muted loop disablePictureInPicture></video>
+        <video id="video2" src="vid\CGI\headphones.mp4" muted loop disablePictureInPicture></video>
+        <video src="vid\CGI\camera.mp4" muted loop disablePictureInPicture></video>
+        <video src="vid\CGI\screen-coding.mp4" muted loop disablePictureInPicture></video>
+        <video src="vid\CGI\cosmetics.mp4" muted loop disablePictureInPicture></video>
+        <video src="vid\CGI\blue-sphere-rebirth.mp4" muted loop disablePictureInPicture></video>
+        <video src="vid\CGI\cube-index.mp4" muted loop disablePictureInPicture></video>
+        <video src="vid\CGI\NMixedWeb.mp4" muted loop disablePictureInPicture></video>
+        <video src="vid\CGI\AliveWeb.mp4" muted loop disablePictureInPicture></video>
 
         <div class="lightbox-controls">
             <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
