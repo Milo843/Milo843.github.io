@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400&display=swap');
+
+:root {
+    --padding-horizontal-nav-elements: 1rem;
+    --margin-horizontal-nav-elements: 1rem;
+    --button-border-radius: .5rem;
+    --nav-bar-font-family: 'Figtree', sans-serif;
+    --nav-bar-height: 3.5rem;
+    --nav-font-size: 1.2rem;
+    --nav-grid-gap: 2.25rem
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-nav {
+    z-index: 111;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    height: var(--nav-bar-height);
+    width: 100%;
+    background-color: rgba(250, 250, 250, .5);
+    backdrop-filter: blur(5px);
+    font-size: var(--nav-font-size);
+}
+
+.nav-dummy {
+    height: var(--nav-bar-height);
+
+}
+
+.nav-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 84%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: var(--padding-horizontal-nav-container);
+    padding-right: var(--padding-horizontal-nav-container);
+}
+
+.nav-container div {
+    display: flex;
+    height: 80%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: var(--button-border-radius);
+}
+
+.nav-container .nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--nav-grid-gap);
+}
+
+.nav-left a:hover {
+    margin-left: calc(0rem - var(--padding-horizontal-nav-elements));
+    margin-right: calc(0rem - var(--padding-horizontal-nav-elements));
+    padding-left: var(--padding-horizontal-nav-elements);
+    padding-right: var(--padding-horizontal-nav-elements);
+}
+
+.nav-center a {
+    padding-left: var(--padding-horizontal-nav-elements);
+    padding-right: var(--padding-horizontal-nav-elements);
+}
+
+.nav-right a:hover {
+    margin-left: calc(0rem - var(--padding-horizontal-nav-elements));
+    margin-right: calc(0rem - var(--padding-horizontal-nav-elements));
+    padding-left: var(--padding-horizontal-nav-elements);
+    padding-right: var(--padding-horizontal-nav-elements);
+}
+
+.nav-container a {
+    color: var(--font-color-dark-secondary);
+    font-family: var(--nav-bar-font-family);
+    border-radius: var(--border-radius-button);
+    display: flex;
+    align-items: center;
+}
+
+.nav-container a:hover {
+
+    transition: 20ms;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}

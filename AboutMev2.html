@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav/nav.css">
+    <link rel="stylesheet" href="Main/Main.css">
+    <link rel="stylesheet" href="About-me/About-me.css">
+    <script src="Main/Main.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!--main-nav imports code from nav/nav.html using script loacted in Main/Main.js-->
+    <nav id="main-nav"></nav>
+    <script src="nav/nav.js"></script>
+    <!--Navigation bar contents end here-->
+    <div class="top-about-me-container">
+        <video autoplay muted loop id="top-about-me-vid" ><source src="About-me/dots-with-black-background.mp4" type="video/mp4" preload="none"> 
+        </video> 
+        
+        <div class="photo-text-grid">
+            <div class="about-me-photo">
+                <div class="photo-container"><img src="About-me/Me.png"></div>
+            </div>
+            <div class="about-me-text">
+                <h1>About me</h1>
+                <p>I am a photography student who specialises in still life photography. Due to accelerating development of technology and constant changes within economic landscape I keep my practice flexible, which is why recently I also started scrupulously exploring Graphic design, CGI and Web Development.
+                </p>
+                <div class="Contacts">
+                    <p>Telephone:XXX-XXX-XXX</p>
+                    <p>E-mail:mstuXXXXXX@gmail.com</p>
+                  </div>
+            </div>
+        </div>
+
+        <div class="arrow-down" onclick="window.location='#scroll-1'">
+          <a>&#8250;</a>
+        </div>
+    </div>
+    <!--Footer imports html code from Main/Footer.html using script from Main/Main.js-->
+    <footer id="Footer"></footer>
+</body>
+</html>

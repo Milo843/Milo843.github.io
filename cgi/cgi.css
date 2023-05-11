@@ -1,11 +1,13 @@
 .type-title {
-    color: white;
+    color: black;
     font-size: 3rem;
     margin-left: 8%;
     margin-top: var(--nav-bar-height);
 }
 
-
+#CGI-main {
+    font-size: 6rem;
+}
 
 
 .photo-grid {

@@ -1,72 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Developement</title>
-    <link rel="stylesheet" href="Webdev/Webdev.css">
     <link rel="stylesheet" href="Main\Main.css">
+    <link rel="stylesheet" href="nav/nav-bright.css">
+    <link rel="stylesheet" href="Main/footer-bright.css">
+    <link rel="stylesheet" href="Webdev/Webdev.css">
     <link rel="stylesheet" href="Photography/Photography.css">
     <link rel="stylesheet" href="Photography\PhotographyFlex.css">
+    <script src="Main/jquery.js"></script>
     <script src="Main/Main.js" defer></script>
-    <link rel="stylesheet" href="nav/nav.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Main/video-viewport.js" defer></script>
+
 </head>
+
 <body>
     <!--main-nav imports code from nav/nav.html using script loacted in Main/Main.js-->
     <nav id="main-nav"></nav>
     <script src="nav/nav.js"></script>
     <div class="nav-dummy"></div>
-    <!--Navigation bar contents end here-->
+    <!-- Photography Collection-->
+    <h2 class="type-title" id="photography">Webdev</h2>
 
-    <div class="TitleContainer">
-        <h1 class="Title">Webdev</h1>
-    </div>
-
-    <!--Photos Flex begins here-->
-    <div class="PhotoFlexContainer">
-        <!--Row 1-->
-            <div class="Row">
-                <!--Photo 1-->
-                <a href="Webdev/Webdev-Website/index.html" target="_blank"><div class="PhotoCard">
-                    <img src="Img\Webdev\webdev-icon-v2.PNG" >
-                    <div class="TextContainer">
-                    <h2 class="CardTitle" >AMJ</h2>
-                    <a class="CardDescription">While creating that website I focused on creating a simple and proffesional looking design that also reflects skills in website developement </br>/Work in progress/</a>
-                    </div>
-                </div></a>
-                <!--Photo 2-->
-                
-                
-            </div>
-            
-        <!--Row 2-->
-            <div class="Row">
-                <!--Photo 1-->
-                <div class="PhotoCard" onclick="location.href='./Webdev/Webdev-Website/index.html';">
-                    
-                    </div>
-                </div>
-            </div>
-                <!--Photo 2-->
-                
-        <!--Row 3-->
-            <div class="Row">
-                <!--Photo 1-->
-                <div class="PhotoCard" onclick="openModal();currentSlide(2)">
-                    
-                    </div>
-                </div>
-            </div>
-                <!--Photo 2-->
-    
-                <!--Photo 3-->
+    <div class="photo-grid">
+        <div>
+            <video src="vid\Webdev\AMJ-website-preview.mp4" autoplay muted loop disablePictureInPicture></video>
+        </div>
+        <div>
+            <video src="vid\Webdev\fizjowolny-website-preview.mp4" autoplay muted loop disablePictureInPicture
+                onclick="location.href='https://fizjowolny.pl'"></video>
         </div>
 
+    </div>
 
 
-    <!--Footer imports html code from Main/Footer.html using script from Main/Main.js-->
+
+    <!--Footer imports html code from Main/Footer.html ueeesing script from Main/Main.js-->
     <footer id="Footer"></footer>
 </body>
+
 </html>

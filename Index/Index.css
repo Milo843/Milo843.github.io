@@ -9,6 +9,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: var(--background-color-dark);
+}
+
 img {
     pointer-events: none;
 }

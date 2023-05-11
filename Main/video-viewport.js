@@ -1,5 +1,5 @@
 // Get all the videos on the page
-var videos = document.querySelectorAll('slide');
+var videos = document.querySelectorAll('video');
 
 // Options for the Intersection Observer
 var options = {
