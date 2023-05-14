@@ -1,12 +1,12 @@
 //Open Lightbox; Enter FullScreen; Hide Scrollbar
 function openModal() {
-    document.getElementById("lightbox-photography").style.display = "block";
+    document.getElementById("lightbox-photography").classList.add("visible");
     document.documentElement.requestFullscreen();
     document.body.style.overflow = 'hidden';
 }
 //Close Lightbox; Exit FullScreen; Show Scrollbar
 function closeModal() {
-    document.getElementById("lightbox-photography").style.display = "none";
+    document.getElementById("lightbox-photography").classList.remove("visible");
     document.exitFullscreen();
     document.body.style.overflow = 'visible';
 }
@@ -26,7 +26,7 @@ function currentSlide(n) {
 // Controls which picture is shown and which are hidden
 function showSlides(n) {
     var i;
-    var slides = document.querySelectorAll('#lightbox-photography img, #lightbox-photography video');
+    var slides = document.querySelectorAll('#lightbox-photography picture, #lightbox-photography video');
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
