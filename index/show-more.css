@@ -1,0 +1,22 @@
+.show-more {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: var(--border-radius-button);
+    padding: var(--padding-horizontal-nav-elements);
+    margin-bottom: 6rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.show-more:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-left: var(--padding-horizontal-nav-elements);
+    padding-right: var(--padding-horizontal-nav-elements);
+}
+
+.spoiler-group {
+    display: none;
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400&family=Inter:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap');
+
+:root {
+    --main-margin-left-right: 8%;
+    --border-radius-button: 0.8rem;
+    --font-dark: rgb(77, 81, 86);
+    --font-family-titles: 'Cormorant Garamond', serif;
+    --main-font-family: 'Roboto', sans-serif;
+    --font-color-dark-primary: #0D0D0D;
+    --font-color-dark-secondary: #262626;
+    --font-color-white-primary: #E6E6E6;
+    --font-size-title: 3rem;
+    --font-size-description: 1.3rem;
+    --box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font-family);
+    scroll-behavior: smooth;
+}

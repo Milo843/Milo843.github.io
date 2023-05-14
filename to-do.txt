@@ -1,0 +1,3 @@
+ADD boolean which becomes true when one lightbox is launched 
+In keydown event listener add AND logic:
+(when key 'n' is pressed AND boolean lightbox 'n' is true then do function 'n')
