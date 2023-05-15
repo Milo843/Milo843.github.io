@@ -148,12 +148,14 @@
     position: fixed;
     display: grid;
     opacity: 0;
+    visibility: hidden;
     gap: 3rem;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
     transition: 600ms;
     width: 8%;
+
 }
 
 .photography-right-menu {
@@ -166,7 +168,8 @@
     transform: translateY(-50%);
     width: 8%;
     transition: 600ms;
-
+    visibility: hidden;
+    pointer-events: visible;
 }
 
 .photography-left-menu p,
@@ -204,6 +207,7 @@
 
 .visible {
     opacity: 1;
+    visibility: visible;
 }
 
 
