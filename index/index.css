@@ -131,7 +131,7 @@
     writing-mode: vertical-lr;
     text-orientation: upright;
     text-align: center;
-    font-family: figtree;
+    font-family: 'figtree', sans-serif;
     font-size: calc(var(--font-size-title) / 1.5);
     text-transform: uppercase;
 
