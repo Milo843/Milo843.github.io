@@ -32,7 +32,8 @@
 .type-title {
     font-size: var(--font-size-title);
     font-family: var(--font-family-titles);
-    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     color: var(--font-color-dark-primary);
     text-decoration: none;
     padding-top: 3rem;
